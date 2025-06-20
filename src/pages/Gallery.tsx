@@ -9,37 +9,37 @@ const Gallery: React.FC = () => {
   const images = [
     {
       src: 'https://i.postimg.cc/MTc9P0D4/photo-2025-06-04-12-16-53.jpg',
-      alt: 'Students learning in classroom',
+      alt: t('galleryAlt1'),
       category: t('classroomActivities')
     },
     {
       src: 'https://i.postimg.cc/3JjncxXK/photo-2025-06-04-12-18-20.jpg',
-      alt: 'Interactive learning session',
+      alt: t('galleryAlt2'),
       category: t('classroomActivities')
     },
     {
       src: 'https://i.postimg.cc/gkpK8bf1/photo-2025-06-04-12-17-40.jpg',
-      alt: 'Happy students',
+      alt: t('galleryAlt3'),
       category: t('studentLife')
     },
     {
       src: 'https://i.postimg.cc/dVtmNmQB/photo-2025-06-04-12-21-53.jpg',
-      alt: 'School activities',
+      alt: t('galleryAlt4'),
       category: t('events')
     },
     {
       src: 'https://i.postimg.cc/7YqgbMzk/photo-2025-06-04-12-17-23.jpg',
-      alt: 'Learning environment',
+      alt: t('galleryAlt5'),
       category: t('classroomActivities')
     },
     {
       src: 'https://i.postimg.cc/tCXV91bS/photo-2025-06-04-12-20-12.jpg',
-      alt: 'Student engagement',
+      alt: t('galleryAlt6'),
       category: t('studentLife')
     },
     {
       src: 'https://i.postimg.cc/prkrmZv0/photo-2025-06-04-12-19-42.jpg',
-      alt: 'Educational activities',
+      alt: t('galleryAlt7'),
       category: t('events')
     }
   ];

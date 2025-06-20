@@ -128,7 +128,7 @@ const About: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">{t('accreditationStandards')}</h2>
           <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
-            As a non-charter private school, we maintain high educational standards while providing the flexibility to integrate Islamic education throughout our curriculum. Our programs meet and exceed state educational requirements.
+            {t('accreditationStandardsDesc')}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">

@@ -403,7 +403,7 @@ const RegistrationForm: React.FC = () => {
 
         <div className="bg-gray-50 p-4 rounded-lg">
           <p className="text-sm text-gray-600">
-            <span className="text-red-500">*</span> Required fields. By submitting this form, you agree to be contacted by Al-Quran Islamic School regarding your application.
+            <span className="text-red-500">*</span> {t('requiredFields')}
           </p>
         </div>
 

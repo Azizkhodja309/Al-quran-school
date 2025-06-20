@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">{t('quickLink')}</h4>
             <div className="space-y-2">
               <Link to="/about" className="block text-gray-300 hover:text-white transition-colors">
                 {t('about')}
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
 
           {/* Social Media */}
           <div>
-            <h4 className="font-semibold mb-4">Follow Us</h4>
+            <h4 className="font-semibold mb-4">{t('followUs')}</h4>
             <div className="flex space-x-4">
               <a 
                 href="https://facebook.com" 
@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Al-Quran Islamic School. All rights reserved.
+            © {new Date().getFullYear()} {t('allRightReserved')}
           </p>
         </div>
       </div>
