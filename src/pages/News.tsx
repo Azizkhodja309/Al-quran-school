@@ -4,15 +4,16 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 const News: React.FC = () => {
   const { t } = useLanguage();
+  const currentLanguage = useLanguage().language;
 
-  const articles = [
+  const articles_en = [
     {
       id: 1,
       title: 'New STEM Program Launches This Fall',
       excerpt: 'We are excited to introduce our enhanced STEM curriculum that will provide students with hands-on learning experiences in science, technology, engineering, and mathematics.',
       date: 'March 10, 2024',
       author: 'Admin Team',
-      category: t('academics'),
+      category: 'Academics',
       image: 'https://i.postimg.cc/3JjncxXK/photo-2025-06-04-12-18-20.jpg'
     },
     {
@@ -21,7 +22,7 @@ const News: React.FC = () => {
       excerpt: 'Our recent parent-teacher conferences saw excellent attendance with meaningful discussions about student progress and collaborative planning for continued growth.',
       date: 'March 5, 2024',
       author: 'Principal',
-      category: t('schoolUpdates'),
+      category: 'School Updates',
       image: 'https://i.postimg.cc/gkpK8bf1/photo-2025-06-04-12-17-40.jpg'
     },
     {
@@ -30,7 +31,7 @@ const News: React.FC = () => {
       excerpt: 'Students and families came together to celebrate Islamic heritage through cultural presentations, traditional foods, and educational displays.',
       date: 'February 28, 2024',
       author: 'Events Committee',
-      category: t('events'),
+      category: 'Events',
       image: 'https://i.postimg.cc/dVtmNmQB/photo-2025-06-04-12-21-53.jpg'
     },
     {
@@ -39,7 +40,7 @@ const News: React.FC = () => {
       excerpt: 'Our phonics-based reading program continues to show remarkable improvements in student literacy rates across all grade levels.',
       date: 'February 20, 2024',
       author: 'Academic Director',
-      category: t('academics'),
+      category: 'Academics',
       image: 'https://i.postimg.cc/7YqgbMzk/photo-2025-06-04-12-17-23.jpg'
     },
     {
@@ -48,7 +49,7 @@ const News: React.FC = () => {
       excerpt: 'Learn about our approach to character development and how we integrate Islamic values into daily learning experiences.',
       date: 'February 15, 2024',
       author: 'Islamic Studies Team',
-      category: t('values'),
+      category: 'Values',
       image: 'https://i.postimg.cc/tCXV91bS/photo-2025-06-04-12-20-12.jpg'
     },
     {
@@ -57,16 +58,133 @@ const News: React.FC = () => {
       excerpt: 'Our young artists displayed their creative works in our annual art exhibition, demonstrating the importance of creative expression in education.',
       date: 'February 10, 2024',
       author: 'Art Teacher',
-      category: t('events'),
+      category: 'Events',
       image: 'https://i.postimg.cc/prkrmZv0/photo-2025-06-04-12-19-42.jpg'
     }
   ];
 
+  const articles_uz = [
+    {
+      id: 1,
+      title: 'Yangi STEM dasturi shu kuzda boshlanadi',
+      excerpt: 'Biz ilm-fan, texnologiya, muhandislik va matematikani amaliy o‘rganishga asoslangan yangilangan STEM dasturimizni taqdim etishdan xursandmiz.',
+      date: '2024-yil 10-mart',
+      author: 'Admin jamoasi',
+      category: 'Akademik',
+      image: 'https://i.postimg.cc/3JjncxXK/photo-2025-06-04-12-18-20.jpg'
+    },
+    {
+      id: 2,
+      title: 'Ota-ona va o‘qituvchilar uchrashuvi muvaffaqiyatli o‘tdi',
+      excerpt: 'Yaqinda bo‘lib o‘tgan ota-ona va o‘qituvchi uchrashuvlarida yuqori ishtirok va samarali muloqotlar bo‘ldi.',
+      date: '2024-yil 5-mart',
+      author: 'Direktor',
+      category: 'Maktab yangiliklari',
+      image: 'https://i.postimg.cc/gkpK8bf1/photo-2025-06-04-12-17-40.jpg'
+    },
+    {
+      id: 3,
+      title: 'Islomiy meros oyi nishonlandi',
+      excerpt: 'O‘quvchilar va oilalar islomiy merosni madaniy taqdimotlar, milliy taomlar va ta’limiy ko‘rgazmalar orqali nishonladilar.',
+      date: '2024-yil 28-fevral',
+      author: 'Tadbirlar komissiyasi',
+      category: 'Tadbirlar',
+      image: 'https://i.postimg.cc/dVtmNmQB/photo-2025-06-04-12-21-53.jpg'
+    },
+    {
+      id: 4,
+      title: 'O‘qish dasturi ajoyib natijalarni ko‘rsatmoqda',
+      excerpt: 'Fonetik asosga ega o‘qish dasturimiz barcha bosqichlarda o‘quvchilarning savodxonligini sezilarli darajada oshirdi.',
+      date: '2024-yil 20-fevral',
+      author: 'Ta’lim direktori',
+      category: 'Akademik',
+      image: 'https://i.postimg.cc/7YqgbMzk/photo-2025-06-04-12-17-23.jpg'
+    },
+    {
+      id: 5,
+      title: 'Xarakter tarbiyasi: kuchli musulmonlarni tarbiyalash',
+      excerpt: 'Bizning xarakter tarbiyasi yondashuvimiz va islomiy qadriyatlarni kundalik ta’limga qo‘shish usullarimiz bilan tanishing.',
+      date: '2024-yil 15-fevral',
+      author: 'Islomiy ta’lim jamoasi',
+      category: 'Qadriyatlar',
+      image: 'https://i.postimg.cc/tCXV91bS/photo-2025-06-04-12-20-12.jpg'
+    },
+    {
+      id: 6,
+      title: 'O‘quvchilarning san’at ko‘rgazmasi ijodkorlikni namoyon etdi',
+      excerpt: 'Yosh rassomlarimiz yillik san’at ko‘rgazmasida o‘z ijod mahsullarini taqdim etishdi, bu esa ta’limdagi ijodiy ifodaning ahamiyatini ko‘rsatdi.',
+      date: '2024-yil 10-fevral',
+      author: 'San’at o‘qituvchisi',
+      category: 'Tadbirlar',
+      image: 'https://i.postimg.cc/prkrmZv0/photo-2025-06-04-12-19-42.jpg'
+    }
+  ];
+
+  const articles_ru = [
+    {
+      id: 1,
+      title: 'Новая STEM-программа стартует этой осенью',
+      excerpt: 'Мы рады представить нашу обновлённую STEM-программу, которая предоставит учащимся практические занятия по науке, технологии, инженерии и математике.',
+      date: '10 марта 2024 г.',
+      author: 'Администрация',
+      category: 'Академические',
+      image: 'https://i.postimg.cc/3JjncxXK/photo-2025-06-04-12-18-20.jpg'
+    },
+    {
+      id: 2,
+      title: 'Успешная встреча родителей и учителей',
+      excerpt: 'На недавней встрече родителей и учителей присутствовало много участников, обсуждались успехи учеников и планы на будущее.',
+      date: '5 марта 2024 г.',
+      author: 'Директор',
+      category: 'Школьные обновления',
+      image: 'https://i.postimg.cc/gkpK8bf1/photo-2025-06-04-12-17-40.jpg'
+    },
+    {
+      id: 3,
+      title: 'Празднование месяца исламского наследия',
+      excerpt: 'Ученики и семьи совместно отпраздновали исламское наследие с культурными презентациями, традиционными блюдами и образовательными выставками.',
+      date: '28 февраля 2024 г.',
+      author: 'Комитет мероприятий',
+      category: 'События',
+      image: 'https://i.postimg.cc/dVtmNmQB/photo-2025-06-04-12-21-53.jpg'
+    },
+    {
+      id: 4,
+      title: 'Программа чтения показывает отличные результаты',
+      excerpt: 'Наша программа чтения, основанная на фонетике, демонстрирует значительное улучшение грамотности учащихся на всех уровнях.',
+      date: '20 февраля 2024 г.',
+      author: 'Академический директор',
+      category: 'Академические',
+      image: 'https://i.postimg.cc/7YqgbMzk/photo-2025-06-04-12-17-23.jpg'
+    },
+    {
+      id: 5,
+      title: 'Воспитание характера: формирование сильных мусульман',
+      excerpt: 'Узнайте о нашем подходе к воспитанию характера и интеграции исламских ценностей в повседневное обучение.',
+      date: '15 февраля 2024 г.',
+      author: 'Команда исламских наук',
+      category: 'Ценности',
+      image: 'https://i.postimg.cc/tCXV91bS/photo-2025-06-04-12-20-12.jpg'
+    },
+    {
+      id: 6,
+      title: 'Выставка ученических работ демонстрирует креативность',
+      excerpt: 'Наши юные художники представили свои работы на ежегодной выставке, демонстрируя важность творческого самовыражения в образовании.',
+      date: '10 февраля 2024 г.',
+      author: 'Учитель искусства',
+      category: 'События',
+      image: 'https://i.postimg.cc/prkrmZv0/photo-2025-06-04-12-19-42.jpg'
+    }
+  ];
+
+  const articles = currentLanguage === 'en' ? articles_en : currentLanguage === 'uz' ? articles_uz : articles_ru;
+
+
   const categories = [t('all'), t('academics'), t('schoolUpdates'), t('events'), t('values')];
   const [activeCategory, setActiveCategory] = React.useState(t('all'));
 
-  const filteredArticles = activeCategory === t('all') 
-    ? articles 
+  const filteredArticles = activeCategory === t('all')
+    ? articles
     : articles.filter(article => article.category === activeCategory);
 
   return (
@@ -93,11 +211,10 @@ const News: React.FC = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                  activeCategory === category
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${activeCategory === category
                     ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600'
-                }`}
+                  }`}
               >
                 {category}
               </button>
@@ -168,12 +285,11 @@ const News: React.FC = () => {
                 />
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className={`text-xs font-medium px-3 py-1 rounded-full ${
-                      article.category === t('academics') ? 'bg-blue-100 text-blue-800' :
-                      article.category === t('events') ? 'bg-purple-100 text-purple-800' :
-                      article.category === t('values') ? 'bg-green-100 text-green-800' :
-                      'bg-gray-100 text-gray-800'
-                    }`}>
+                    <span className={`text-xs font-medium px-3 py-1 rounded-full ${article.category === t('academics') ? 'bg-blue-100 text-blue-800' :
+                        article.category === t('events') ? 'bg-purple-100 text-purple-800' :
+                          article.category === t('values') ? 'bg-green-100 text-green-800' :
+                            'bg-gray-100 text-gray-800'
+                      }`}>
                       {article.category}
                     </span>
                   </div>

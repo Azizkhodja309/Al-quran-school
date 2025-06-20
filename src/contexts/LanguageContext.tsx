@@ -177,6 +177,28 @@ const translations = {
     values: 'Values',
     subscribe: 'Subscribe',
 
+    // New articles
+    articlesTitle1: 'New STEM Program Launches This Fall',
+    articlesTitle2: 'Parent-Teacher Conference Success',
+    articlesTitle3: 'Islamic Heritage Month Celebration',
+    articlesTitle4: 'Reading Program Shows Outstanding Results',
+    articlesTitle5: 'Character Education: Building Strong Muslims',
+    articlesTitle6: 'Student Art Exhibition Showcases Creativity',
+
+    articlesExcerpt1: 'We are excited to introduce our enhanced STEM curriculum that will provide students with hands-on learning experiences in science, technology, engineering, and mathematics.',
+    articlesExcerpt2: 'Our recent parent-teacher conferences saw excellent attendance with meaningful discussions about student progress and collaborative planning for continued growth.',
+    articlesExcerpt3: 'Students and families came together to celebrate Islamic heritage through cultural presentations, traditional foods, and educational displays.',
+    articlesExcerpt4: 'Our phonics-based reading program continues to show remarkable improvements in student literacy rates across all grade levels.',
+    articlesExcerpt5: 'Learn about our approach to character development and how we integrate Islamic values into daily learning experiences.',
+    articlesExcerpt6: 'Our young artists displayed their creative works in our annual art exhibition, demonstrating the importance of creative expression in education.',
+
+    articleDate1: 'March 10, 2024',
+    articleDate2: 'March 5, 2024',
+    articleDate3: 'February 28, 2024',
+    articleDate4: 'February 20, 2024',
+    articleDate5: 'February 15, 2024',
+    articleDate6: 'February 10, 2024',
+
     // Dailiy schedule
     dailyScheduleTime1: '8:00 - 8:30 AM',
     dailyScheduleTime2: '8:30 - 9:30 AM',
@@ -443,6 +465,29 @@ const translations = {
     values: 'Qadriyatlar',
     subscribe: 'Obuna bo\'lish',
 
+    // New articles
+    articlesTitle1: 'Yangi STEM dasturi shu kuzda boshlanadi',
+    articlesTitle2: 'Ota-ona va o‘qituvchi uchrashuvi muvaffaqiyatli o‘tdi',
+    articlesTitle3: 'Islomiy meros oyini nishonlash',
+    articlesTitle4: 'O‘qish dasturi ajoyib natijalarni ko‘rsatmoqda',
+    articlesTitle5: 'Xarakter tarbiyasi: Kuchli musulmonlarni tarbiyalash',
+    articlesTitle6: 'O‘quvchilar san’at ko‘rgazmasida ijodkorlikni namoyon etdi',
+
+    articlesExcerpt1: 'Biz o‘quvchilarga fan, texnologiya, muhandislik va matematika bo‘yicha amaliy ta’lim beradigan yangi STEM dasturini joriy qilayotganimizdan xursandmiz.',
+    articlesExcerpt2: 'Yaqinda o‘tkazilgan ota-ona va o‘qituvchi uchrashuvlarida faol ishtirok etildi, o‘quvchilar taraqqiyoti haqida muhim suhbatlar bo‘lib o‘tdi.',
+    articlesExcerpt3: 'O‘quvchilar va oilalar madaniy taqdimotlar, an’anaviy taomlar va ma’rifiy ko‘rgazmalar orqali islomiy merosni nishonladilar.',
+    articlesExcerpt4: 'Fonetik asoslangan o‘qish dasturimiz barcha sinf darajalarida savodxonlik darajasining o‘sishini ko‘rsatmoqda.',
+    articlesExcerpt5: 'Bizning xarakter tarbiyasi yondashuvimiz va islomiy qadriyatlarni kundalik ta’lim jarayoniga qanday qo‘shayotganimiz bilan tanishing.',
+    articlesExcerpt6: 'Yosh rassomlarimiz yillik san’at ko‘rgazmasida o‘z ijodiy ishlarini namoyish qilib, ta’limda ijodkorlikning ahamiyatini ko‘rsatdilar.',
+
+    articleDate1: '2024-yil 10-mart',
+    articleDate2: '2024-yil 5-mart',
+    articleDate3: '2024-yil 28-fevral',
+    articleDate4: '2024-yil 20-fevral',
+    articleDate5: '2024-yil 15-fevral',
+    articleDate6: '2024-yil 10-fevral',
+
+
     // Dailiy schedule
     dailyScheduleTime1: '8:00 - 8:30 AM',
     dailyScheduleTime2: '8:30 - 9:30 AM',
@@ -708,6 +753,30 @@ const translations = {
     schoolUpdates: 'Школьные обновления',
     values: 'Ценности',
     subscribe: 'Подписаться',
+
+    // New articles
+    articlesTitle1: 'Новая STEM-программа стартует этой осенью',
+    articlesTitle2: 'Успешное проведение родительско-учительской встречи',
+    articlesTitle3: 'Празднование месяца исламского наследия',
+    articlesTitle4: 'Программа чтения демонстрирует отличные результаты',
+    articlesTitle5: 'Воспитание характера: Формирование сильных мусульман',
+    articlesTitle6: 'Выставка ученических работ демонстрирует творчество',
+
+    articlesExcerpt1: 'Мы рады представить нашу усовершенствованную STEM-программу, которая даст ученикам практический опыт в науке, технологиях, инженерии и математике.',
+    articlesExcerpt2: 'На недавних встречах родителей и учителей было отличное присутствие, обсуждались успехи учеников и совместное планирование дальнейшего развития.',
+    articlesExcerpt3: 'Ученики и их семьи объединились, чтобы отметить исламское наследие с помощью культурных презентаций, традиционной кухни и обучающих экспозиций.',
+    articlesExcerpt4: 'Наша программа чтения на основе фонетики продолжает показывать заметные улучшения уровня грамотности среди учеников всех классов.',
+    articlesExcerpt5: 'Узнайте о нашем подходе к воспитанию характера и о том, как мы интегрируем исламские ценности в повседневное обучение.',
+    articlesExcerpt6: 'Наши юные художники представили свои творческие работы на ежегодной выставке, подчеркнув важность самовыражения в образовании.',
+
+    articleDate1: '10 марта 2024 г.',
+    articleDate2: '5 марта 2024 г.',
+    articleDate3: '28 февраля 2024 г.',
+    articleDate4: '20 февраля 2024 г.',
+    articleDate5: '15 февраля 2024 г.',
+    articleDate6: '10 февраля 2024 г.',
+
+
 
     // Dailiy schedule
     dailyScheduleTime1: '8:00 - 8:30 AM',
