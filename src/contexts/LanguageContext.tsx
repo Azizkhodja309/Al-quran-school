@@ -160,6 +160,15 @@ const translations = {
     events: 'Events',
     all: 'All',
 
+    // Gallery alts
+    galleryAlt1: 'Students learning in classroom',
+    galleryAlt2: 'Interactive learning session',
+    galleryAlt3: 'Happy students',
+    galleryAlt4: 'School activities',
+    galleryAlt5: 'Learning environment',
+    galleryAlt6: 'Student engagement',
+    galleryAlt7: 'Educational activities',
+
     // News
     newsDesc: 'Stay updated with the latest news, announcements, and insights from Al-Quran Islamic School.',
     featured: 'Featured',
@@ -417,6 +426,15 @@ const translations = {
     events: 'Tadbirlar',
     all: 'Barchasi',
 
+    // Gallery alts
+    galleryAlt1: "O‘quvchilar sinfda ta’lim olmoqda",
+    galleryAlt2: "Interaktiv o‘quv mashg‘uloti",
+    galleryAlt3: "Baxtli o‘quvchilar",
+    galleryAlt4: "Maktabdagi mashg‘ulotlar",
+    galleryAlt5: "Ta’lim muhiti",
+    galleryAlt6: "O‘quvchilar faolligi",
+    galleryAlt7: "Ta’limiy mashg‘ulotlar",
+
     // News
     newsDesc: 'Al-Quran Islom maktabidan eng so\'nggi yangiliklar, e\'lonlar va tushunchalar bilan yangilanib turing.',
     featured: 'Tanlangan',
@@ -672,6 +690,16 @@ const translations = {
     studentLife: 'Студенческая жизнь',
     events: 'События',
     all: 'Все',
+
+    // Gallery alts
+    galleryAlt1: "Ученики учатся в классе",
+    galleryAlt2: "Интерактивное учебное занятие",
+    galleryAlt3: "Счастливые ученики",
+    galleryAlt4: "Школьные мероприятия",
+    galleryAlt5: "Учебная среда",
+    galleryAlt6: "Активность учеников",
+    galleryAlt7: "Образовательные мероприятия",
+
 
     // News
     newsDesc: 'Будьте в курсе последних новостей, объявлений и идей исламской школы Аль-Коран.',
