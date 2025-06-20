@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { languageChooser, useLanguage } from '../contexts/LanguageContext';
 
 interface ContactFormData {
   fullName: string;
@@ -139,16 +139,16 @@ const Contact: React.FC = () => {
             </div>
           </div>
           <h3 className="text-lg font-semibold text-green-800 mb-2">
-            Application Submitted Successfully!
+            {t('submissionSuccess')}
           </h3>
           <p className="text-green-700 mb-6">
-            Thank you for your application. We will contact you soon to discuss the next steps.
+            {t('submissionSuccessDesc')}
           </p>
           <button
             onClick={() => setSubmitted(false)}
             className="text-green-600 hover:text-green-700 font-medium"
           >
-            Submit Another Application
+            {t('backToContact')}
           </button>
         </div>
       </div>

@@ -345,6 +345,9 @@ const translations = {
     email: 'Email',
     address: 'Address',
     enterYourEmail: 'Enter your email',
+    submissionSuccess: 'Application Submitted Successfully!',
+    submissionSuccessDesc: 'Thank you for your application. We will contact you soon to discuss the next steps.',
+    backToContact: 'Submit Another Application',
   },
   uz: {
     // Navigation
@@ -671,6 +674,7 @@ const translations = {
   message: 'Xabar',
   sendMessage: 'Xabar yuborish',
 
+<<<<<<< HEAD
   // Common
   learnMore: 'Batafsil',
   readMore: 'Davomini o\'qish',
@@ -680,6 +684,20 @@ const translations = {
   address: 'Manzil',
   enterYourEmail: 'Elektron pochtangizni kiriting',
 },
+=======
+    // Common
+    learnMore: 'Batafsil',
+    readMore: 'Davomini o\'qish',
+    viewAll: 'Barchasini ko\'rish',
+    phone: 'Telefon',
+    email: 'Elektron pochta',
+    address: 'Manzil',
+    enterYourEmail: 'Elektron pochtangizni kiriting',
+    submissionSuccess: 'Ariza muvaffaqiyatli yuborildi!',
+    submissionSuccessDesc: 'Arizangiz uchun rahmat. Keyingi qadamlarni muhokama qilish uchun tez orada siz bilan bog\'lanamiz.',
+    backToContact: 'Yana bir ariza yuborish',
+  },
+>>>>>>> 341fb1ce0eac1f663a0467c3513147e554399122
   ru: {
     // Navigation
     home: 'Главная',
@@ -1017,6 +1035,9 @@ const translations = {
     email: 'Электронная почта',
     address: 'Адрес',
     enterYourEmail: 'Введите ваш email',
+    submissionSuccess: 'Заявление успешно отправлено!',
+    submissionSuccessDesc: 'Спасибо за ваше заявление. Мы свяжемся с вами в ближайшее время, чтобы обсудить следующие шаги.',
+    backToContact: 'Отправить еще одно заявление',
   }
 };
 
