@@ -192,6 +192,7 @@ const News: React.FC = () => {
     { key: "values", label: t("values") }
   ];
 
+  
   // Map qilish:
   const mappedCategories = categories.map(category => ({
     value: category.key,
