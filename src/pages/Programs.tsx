@@ -56,16 +56,16 @@ const Programs: React.FC = () => {
   ];
 
   const dailySchedule = [
-    { time: '8:00 - 8:30 AM', activity: 'Morning Assembly & Dua' },
-    { time: '8:30 - 9:30 AM', activity: 'Quran Recitation' },
-    { time: '9:30 - 10:30 AM', activity: 'Mathematics' },
-    { time: '10:30 - 10:45 AM', activity: 'Snack Break' },
-    { time: '10:45 - 11:45 AM', activity: 'English Language Arts' },
-    { time: '11:45 AM - 12:45 PM', activity: 'Lunch & Prayer' },
-    { time: '12:45 - 1:45 PM', activity: 'Islamic Studies' },
-    { time: '1:45 - 2:30 PM', activity: 'Science/Social Studies' },
-    { time: '2:30 - 3:15 PM', activity: 'Arts & Crafts' },
-    { time: '3:15 - 3:30 PM', activity: 'Dismissal' }
+    { time: t('dailyScheduleTime1'), activity: t('dailyScheduleActivity1')},
+    { time: t('dailyScheduleTime2'), activity: t('dailyScheduleActivity2')},
+    { time: t('dailyScheduleTime3'), activity: t('dailyScheduleActivity3')},
+    { time: t('dailyScheduleTime4'), activity: t('dailyScheduleActivity4')},
+    { time: t('dailyScheduleTime5'), activity: t('dailyScheduleActivity5')},
+    { time: t('dailyScheduleTime6'), activity: t('dailyScheduleActivity6')},
+    { time: t('dailyScheduleTime7'), activity: t('dailyScheduleActivity7')},
+    { time: t('dailyScheduleTime8'), activity: t('dailyScheduleActivity8')},
+    { time: t('dailyScheduleTime9'), activity: t('dailyScheduleActivity9')},
+    { time: t('dailyScheduleTime10'), activity: t('dailyScheduleActivity10')}
   ];
 
   return (
