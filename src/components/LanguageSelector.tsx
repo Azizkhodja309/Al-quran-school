@@ -78,6 +78,7 @@ const LanguageSelector: React.FC = () => {
     setLanguage(langCode);
     setIsOpen(false);
     buttonRef.current?.focus();
+    
   };
 
   const handleKeyDown = (event: React.KeyboardEvent, langCode?: 'en' | 'uz' | 'ru') => {

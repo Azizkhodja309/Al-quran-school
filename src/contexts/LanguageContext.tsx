@@ -121,6 +121,11 @@ const translations = {
     curriculumDStem: 'Mathematics and science education with hands-on experiments',
     curriculumDIslamicStudies: 'Quran, Hadith, Islamic history, and Arabic language',
     curriculumDArts: 'Creative expression through art, music, and storytelling',
+    
+    submiting: 'Submitting...',
+    submitAnotherApp: 'Submit Another Application',
+    submitDiscus: 'Thank you for your application. We will contact you soon to discuss the next steps.',
+    submitOk: 'Application Submitted Successfully!',
 
     // Admissions
     admissionsTitle: 'Admissions',
@@ -140,6 +145,42 @@ const translations = {
     enrollmentConfirmation: 'Enrollment Confirmation',
     enrollmentConfirmationDesc: 'Receive acceptance letter and complete enrollment process',
     reasonForRequest: 'All fields are required. By submitting this form, you agree to be contacted by Al-Quran Islamic School regarding your inquiry.',
+    underAdmissionTitle: 'Join our school family and give your child the gift of quality Islamic education combined with academic excellence.',
+    tuitionInfo1: 'Contact us for current tuition rates and payment plans',
+    tuitionInfo2: 'Competitive rates with flexible payment options available',
+    tuitionInfo3: 'Need-based scholarships available for qualifying families',
+    tuitionInfo4: 'Please contact our admissions office for detailed tuition information and to discuss payment plans.',
+
+    question1: 'What age groups do you serve?',
+    answer1: 'We serve children from PreK (age 3) through 3rd grade (typically age 8-9).',
+    question2: 'What are your class sizes?',
+    answer2: 'We maintain small class sizes of 12-15 students to ensure personalized attention.',
+    question3: 'Do you provide transportation?',
+    answer3: 'We do not provide bus transportation. Parents are responsible for drop-off and pick-up.',
+    question4: 'What is your curriculum like?',
+    answer4: 'We offer a comprehensive curriculum that integrates Islamic studies with core academic subjects including Math, English, Science, and Social Studies.',
+    question5: 'Are meals provided?',
+    answer5: 'Students bring their own lunches. We provide guidance on halal lunch options.',
+    question6: 'What are your school hours?',
+    answer6: 'Our full-day program runs from 8:00 AM to 3:30 PM, Monday through Friday.',
+
+    program: 'Program',
+    financialAid: 'Financial Aid',
+
+    period1: 'December - February',
+    application1: 'Applications Open',
+    period2: 'March - April',
+    application2: 'Tours & Interviews',
+    period3: 'May',
+    application3: 'Acceptance Notifications',
+    period4: 'June - July',
+    application4: 'Orientation & School Begins',
+    period5: 'August',
+    application5: 'Enrollment Finalization',
+
+    registrationForm: 'Student Registration Form 2024-2025',
+    select: 'Select...',
+
 
     // Contact
     contactTitle: 'Contact Us',
@@ -339,6 +380,11 @@ const translations = {
     curriculumDIslamicStudies: 'Qur’on, Hadis, Islom tarixi va Arab tili.',
     curriculumDArts: 'San’at, musiqa va hikoya orqali ijodiy ifoda.',
 
+    submiting: 'Yuborilmoqda...',
+    submitAnotherApp: 'Boshqa ariza yuboring',
+    submitDiscus: 'Murojaatingiz uchun rahmat. Keyingi qadamlarni muhokama qilish uchun tez orada siz bilan bog\'lanamiz.',
+    submitOk: `Ariza muvaffaqiyatli topshirildi!`,
+
     // Admissions
     admissionsTitle: 'Qabul',
     howToApply: 'Qanday ariza berish',
@@ -357,6 +403,41 @@ const translations = {
     enrollmentConfirmation: 'Ro\'yxatga olishni tasdiqlash',
     enrollmentConfirmationDesc: 'Qabul xatini oling va ro\'yxatga olish jarayonini yakunlang',
     reasonForRequest: 'Barcha maydonlar talab qilinadi. Ushbu shaklni yuborish orqali siz so\'rovingiz bo\'yicha Al-Quron Islom maktabi bilan bog\'lanishga rozilik bildirasiz.',
+    underAdmissionTitle: `Bizning maktab oilamizga qo'shiling va farzandingizga sifatli islomiy ta'lim va akademik mukammallikni sovg'a qiling.`,
+    tuitionInfo1: `Joriy o'quv stavkalari va to'lov rejalari uchun biz bilan bog'laning`,
+    tuitionInfo2: `Moslashuvchan to'lov imkoniyatlari mavjud bo'lgan raqobatbardosh tariflar`,
+    tuitionInfo3: `Ehtiyojga asoslangan stipendiyalar malakali oilalar uchun mavjud`,
+    tuitionInfo4: `Iltimos, oʻqish toʻlovi haqida batafsil maʼlumot olish va toʻlov rejalarini muhokama qilish uchun qabul komissiyamiz bilan bogʻlaning.`,
+
+    question1: `Siz qaysi yosh guruhlariga xizmat qilasiz?`,
+    answer1: 'Biz PreK (3 yosh) dan 3-sinfgacha (odatda 8-9 yosh) bolalarga xizmat qilamiz.',
+    question2: 'Sizning sinflaringiz qancha?',
+    answer2: `Biz shaxsiy e'tiborni ta'minlash uchun 12-15 o'quvchidan iborat kichik sinflarni saqlaymiz.`,
+    question3: 'Siz transport bilan ta\'minlaysizmi?',
+    answer3: 'Biz avtobus transportini ta\'minlamaymiz. Ota-onalar olib ketish va olib ketish uchun javobgardir.',
+    question4: `Sizning o'quv dasturingiz qanday?`,
+    answer4: `Biz islomiy fanlarni matematika, ingliz tili, fan va ijtimoiy fanlar kabi asosiy akademik fanlar bilan birlashtirgan keng qamrovli o‘quv dasturini taklif etamiz.`,
+    question5: `Ovqat beriladimi?`,
+    answer5: `Talabalar tushliklarini o'zlari olib kelishadi. Biz halol tushlik variantlari bo'yicha ko'rsatmalar beramiz.`,
+    question6: `Sizning maktab soatlaringiz qancha?`,
+    answer6: `To'liq kunlik dasturimiz dushanbadan jumagacha soat 8:00 dan 15:30 gacha ishlaydi.`,
+
+    program: 'Dastur',
+    financialAid: 'Moliyaviy yordam',
+
+    registrationForm: 'Talaba ro\'yxatga olish shakli 2024-2025',
+    select: 'Tanlang...',
+
+    period1: `Dekabr - fevral`,
+    application1: `Ilovalar ochiq`,
+    period2: 'Mart - aprel',
+    application2: 'Ekskursiyalar va intervyular',
+    period3: 'May',
+    application3: 'Qabul qilish bildirishnomalari',
+    period4: 'Iyun - iyul',
+    application4: 'Orientatsiya va maktab boshlanadi',
+    period5: 'Avgust',
+    application5: 'Ro\'yxatga olishni yakunlash',
 
     // Contact
     contactTitle: 'Biz bilan aloqa',
@@ -556,6 +637,11 @@ const translations = {
     curriculumDIslamicStudies: 'Коран, Хадисы, история ислама и арабский язык.',
     curriculumDArts: 'Творческое самовыражение через искусство, музыку и рассказы.',
 
+    submiting: 'Отправка...',
+    submitAnotherApp: 'Подать еще одну заявку',
+    submitDiscus: 'Спасибо за вашу заявку. Мы свяжемся с вами в ближайшее время, чтобы обсудить дальнейшие шаги.',
+    submitOk: 'Заявка успешно отправлена!',
+
     // Admissions
     admissionsTitle: 'Поступление',
     howToApply: 'Как подать заявление',
@@ -574,6 +660,41 @@ const translations = {
     enrollmentConfirmation: 'Подтверждение зачисления',
     enrollmentConfirmationDesc: 'Получите письмо о зачислении и завершите процесс регистрации',
     reasonForRequest: 'Все поля обязательны для заполнения. Отправляя эту форму, вы соглашаетесь, чтобы с вами связались представители Исламской школы Аль-Коран по поводу вашего запроса.',
+    underAdmissionTitle: 'Присоединяйтесь к нашей школьной семье и подарите своему ребенку качественное исламское образование в сочетании с академическим превосходством.',
+    tuitionInfo1: 'Свяжитесь с нами, чтобы узнать текущие расценки на обучение и планы оплаты.',
+    tuitionInfo2: 'Конкурентоспособные цены и гибкие варианты оплаты',
+    tuitionInfo3: 'Стипендии, основанные на нуждах, доступны для семей, имеющих на это право',
+    tuitionInfo4: 'Пожалуйста, свяжитесь с нашей приемной комиссией для получения подробной информации о стоимости обучения и обсуждения планов оплаты.',
+
+    question1: 'Какие возрастные группы вы обслуживаете?',
+    answer1: 'Мы обслуживаем детей от дошкольного (3 года) до 3-го класса (обычно 8–9 лет).',
+    question2: 'Каковы размеры ваших классов?',
+    answer2: 'Мы поддерживаем небольшие группы по 12–15 человек, чтобы обеспечить индивидуальный подход.',
+    question3: 'Предоставляете ли вы транспорт?',
+    answer3: 'Мы не предоставляем автобусный транспорт. Родители несут ответственность за доставку и сбор детей.',
+    question4: 'Какова ваша учебная программа?',
+    answer4: 'Мы предлагаем комплексную учебную программу, которая объединяет исламоведение с основными академическими предметами, включая математику, английский язык, естественные науки и обществознание.',
+    question5: 'Предоставляется ли питание?',
+    answer5: 'Студенты приносят свои обеды. Мы предоставляем рекомендации по выбору халяльных обедов.',
+    question6: 'Каковы часы занятий в школе?',
+    answer6: 'Наша программа полного дня проводится с 8:00 до 15:30 с понедельника по пятницу.',
+
+    program: 'Программа',
+    financialAid: 'Финансовая помощь',
+
+    registrationForm: 'Регистрационная форма студента 2024-2025',
+    select: 'Выбирать...',
+
+    period1: 'Декабрь - Февраль',
+    application1: 'Приложения открыты',
+    period2: 'Март - Апрель',
+    application2: 'Экскурсии и интервью',
+    period3: 'Mай',
+    application3: 'Уведомления о принятии',
+    period4: 'Июнь - Июль',
+    application4: 'Ориентация и начало школы',
+    period5: 'Август',
+    application5: 'Завершение регистрации',
 
     // Contact
     contactTitle: 'Свяжитесь с нами',

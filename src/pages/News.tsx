@@ -12,7 +12,7 @@ const News: React.FC = () => {
       excerpt: 'We are excited to introduce our enhanced STEM curriculum that will provide students with hands-on learning experiences in science, technology, engineering, and mathematics.',
       date: 'March 10, 2024',
       author: 'Admin Team',
-      category: t('academics'),
+      category: { key: "academics", label: t("academics") },
       image: 'https://i.postimg.cc/3JjncxXK/photo-2025-06-04-12-18-20.jpg'
     },
     {
@@ -21,7 +21,7 @@ const News: React.FC = () => {
       excerpt: 'Our recent parent-teacher conferences saw excellent attendance with meaningful discussions about student progress and collaborative planning for continued growth.',
       date: 'March 5, 2024',
       author: 'Principal',
-      category: t('schoolUpdates'),
+      category: { key: "schoolUpdates", label: t("schoolUpdates") },
       image: 'https://i.postimg.cc/gkpK8bf1/photo-2025-06-04-12-17-40.jpg'
     },
     {
@@ -30,7 +30,7 @@ const News: React.FC = () => {
       excerpt: 'Students and families came together to celebrate Islamic heritage through cultural presentations, traditional foods, and educational displays.',
       date: 'February 28, 2024',
       author: 'Events Committee',
-      category: t('events'),
+      category: { key: "events", label: t("events") },
       image: 'https://i.postimg.cc/dVtmNmQB/photo-2025-06-04-12-21-53.jpg'
     },
     {
@@ -39,7 +39,7 @@ const News: React.FC = () => {
       excerpt: 'Our phonics-based reading program continues to show remarkable improvements in student literacy rates across all grade levels.',
       date: 'February 20, 2024',
       author: 'Academic Director',
-      category: t('academics'),
+      category: { key: "academics", label: t("academics") },
       image: 'https://i.postimg.cc/7YqgbMzk/photo-2025-06-04-12-17-23.jpg'
     },
     {
@@ -48,7 +48,7 @@ const News: React.FC = () => {
       excerpt: 'Learn about our approach to character development and how we integrate Islamic values into daily learning experiences.',
       date: 'February 15, 2024',
       author: 'Islamic Studies Team',
-      category: t('values'),
+      category: { key: "values", label: t("values") },
       image: 'https://i.postimg.cc/tCXV91bS/photo-2025-06-04-12-20-12.jpg'
     },
     {
@@ -57,17 +57,32 @@ const News: React.FC = () => {
       excerpt: 'Our young artists displayed their creative works in our annual art exhibition, demonstrating the importance of creative expression in education.',
       date: 'February 10, 2024',
       author: 'Art Teacher',
-      category: t('events'),
+      category: { key: "events", label: t("events") },
       image: 'https://i.postimg.cc/prkrmZv0/photo-2025-06-04-12-19-42.jpg'
     }
   ];
 
-  const categories = [t('all'), t('academics'), t('schoolUpdates'), t('events'), t('values')];
-  const [activeCategory, setActiveCategory] = React.useState(t('all'));
+  const categories = [
+    { key: "all", label: t("all") },
+    { key: "academics", label: t("academics") },
+    { key: "schoolUpdates", label: t("schoolUpdates") },
+    { key: "events", label: t("events") },
+    { key: "values", label: t("values") }
+  ];
 
-  const filteredArticles = activeCategory === t('all') 
-    ? articles 
-    : articles.filter(article => article.category === activeCategory);
+  // Map qilish:
+  const mappedCategories = categories.map(category => ({
+    value: category.key,
+    label: category.label
+  }));
+
+  console.log(mappedCategories);
+
+  const [activeCategory, setActiveCategory] = React.useState(categories[0]);
+
+  const filteredArticles = activeCategory.key === ('all')
+    ? articles
+    : articles.filter(article => article.category.key === activeCategory.key);
 
   return (
     <div className="min-h-screen bg-white">
@@ -91,15 +106,14 @@ const News: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
               <button
-                key={category}
+                key={category.key}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                  activeCategory === category
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${activeCategory.key === category.key
                     ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600'
-                }`}
+                  }`}
               >
-                {category}
+                {category.label}
               </button>
             ))}
           </div>
@@ -122,7 +136,7 @@ const News: React.FC = () => {
                 <div className="md:w-1/2 p-8">
                   <div className="flex items-center space-x-4 mb-4">
                     <span className="bg-emerald-100 text-emerald-800 text-xs font-medium px-3 py-1 rounded-full">
-                      {filteredArticles[0].category}
+                      {filteredArticles[0].category.label}
                     </span>
                     <span className="text-gray-500 text-sm">{t('featured')}</span>
                   </div>
@@ -168,13 +182,12 @@ const News: React.FC = () => {
                 />
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <span className={`text-xs font-medium px-3 py-1 rounded-full ${
-                      article.category === t('academics') ? 'bg-blue-100 text-blue-800' :
-                      article.category === t('events') ? 'bg-purple-100 text-purple-800' :
-                      article.category === t('values') ? 'bg-green-100 text-green-800' :
-                      'bg-gray-100 text-gray-800'
-                    }`}>
-                      {article.category}
+                    <span className={`text-xs font-medium px-3 py-1 rounded-full ${article.category.label === t('academics') ? 'bg-blue-100 text-blue-800' :
+                        article.category.label === t('events') ? 'bg-purple-100 text-purple-800' :
+                          article.category.label === t('values') ? 'bg-green-100 text-green-800' :
+                            'bg-gray-100 text-gray-800'
+                      }`}>
+                      {article.category.label}
                     </span>
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">

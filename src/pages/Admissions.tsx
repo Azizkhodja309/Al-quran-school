@@ -30,37 +30,37 @@ const Admissions: React.FC = () => {
   ];
 
   const timeline = [
-    { period: 'December - February', activity: 'Applications Open' },
-    { period: 'March - April', activity: 'Tours & Interviews' },
-    { period: 'May', activity: 'Acceptance Notifications' },
-    { period: 'June - July', activity: 'Enrollment Finalization' },
-    { period: 'August', activity: 'Orientation & School Begins' }
+    { period: t('period1'), activity: t('application1') },
+    { period: t('period2'), activity: t('application2') },
+    { period: t("period3"), activity: t('application3') },
+    { period: t('period4'), activity: t('application4') },
+    { period: t('period5'), activity: t('application5') }
   ];
 
   const faqs = [
     {
-      question: 'What age groups do you serve?',
-      answer: 'We serve children from PreK (age 3) through 3rd grade (typically age 8-9).'
+      question: t('question1'),
+      answer: t('answer1')
+    },
+  {
+      question: t('question2'),
+      answer: t('answer2')
     },
     {
-      question: 'What are your class sizes?',
-      answer: 'We maintain small class sizes of 12-15 students to ensure personalized attention.'
+      question: t('question3'),
+      answer: t('answer3')
     },
     {
-      question: 'Do you provide transportation?',
-      answer: 'We do not provide bus transportation. Parents are responsible for drop-off and pick-up.'
+      question: t('question4'),
+      answer: t('answer4')
     },
     {
-      question: 'What is your curriculum like?',
-      answer: 'We offer a comprehensive curriculum that integrates Islamic studies with core academic subjects including Math, English, Science, and Social Studies.'
+      question: t('question5'),
+      answer: t('answer5')
     },
     {
-      question: 'Are meals provided?',
-      answer: 'Students bring their own lunches. We provide guidance on halal lunch options.'
-    },
-    {
-      question: 'What are your school hours?',
-      answer: 'Our full-day program runs from 8:00 AM to 3:30 PM, Monday through Friday.'
+      question: t('question6'),
+      answer: t('answer6')
     }
   ];
 
@@ -74,7 +74,7 @@ const Admissions: React.FC = () => {
               {t('admissionsTitle')}
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join our school family and give your child the gift of quality Islamic education combined with academic excellence.
+              {t('underAdmissionTitle')}
             </p>
           </div>
         </div>
@@ -137,23 +137,23 @@ const Admissions: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <DollarSign className="h-12 w-12 text-emerald-200 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">{t('preK')} Program</h3>
-              <p className="text-emerald-100">Contact us for current tuition rates and payment plans</p>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('preK')} {t('program')}</h3>
+              <p className="text-emerald-100">{t('tuitionInfo1')}</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <DollarSign className="h-12 w-12 text-emerald-200 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">{t('elementary')}</h3>
-              <p className="text-emerald-100">Competitive rates with flexible payment options available</p>
+              <p className="text-emerald-100">{t('tuitionInfo2')}</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6">
               <DollarSign className="h-12 w-12 text-emerald-200 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">Financial Aid</h3>
-              <p className="text-emerald-100">Need-based scholarships available for qualifying families</p>
+              <h3 className="text-xl font-semibold text-white mb-2">{t('financialAid')}</h3>
+              <p className="text-emerald-100">{t('tuitionInfo3')}</p>
             </div>
           </div>
           <p className="text-emerald-100 mt-8">
-            Please contact our admissions office for detailed tuition information and to discuss payment plans.
-          </p>
+            {t('tuitionInfo4')}
+         </p>
         </div>
       </section>
 
