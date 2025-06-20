@@ -36,21 +36,21 @@ const ParentResources: React.FC = () => {
     {
       icon: <Car className="h-6 w-6 text-emerald-600" />,
       title: t('dropoffProcedures'),
-      description: 'Students may be dropped off starting at 7:45 AM. Please use the designated drop-off area and remain in your vehicle. Staff will assist students exiting vehicles.'
+      description: t('dropoffProceduresDesc')
     },
     {
       icon: <Clock className="h-6 w-6 text-emerald-600" />,
       title: t('pickupProcedures'),
-      description: 'Regular dismissal begins at 3:30 PM. Please arrive promptly and display your pick-up tag. Late pick-ups may result in after-care charges.'
+      description: t('pickupProceduresDesc')
     }
   ];
 
   const upcomingEvents = [
-    { date: 'March 15', event: 'Parent-Teacher Conferences', time: '4:00 PM - 7:00 PM' },
-    { date: 'March 22', event: 'Islamic Heritage Day', time: '9:00 AM - 12:00 PM' },
-    { date: 'April 5', event: 'Science Fair', time: '6:00 PM - 8:00 PM' },
-    { date: 'April 12', event: 'Spring Break Begins', time: 'No School' },
-    { date: 'May 3', event: 'Quran Recitation Competition', time: '10:00 AM - 2:00 PM' }
+    { date: t('upcomingEventDate1'), event: t('upcomingEventName1'), time: '4:00 PM - 7:00 PM' },
+    { date: t('upcomingEventDate2'), event: t('upcomingEventName2'), time: '9:00 AM - 12:00 PM' },
+    { date: t('upcomingEventDate3'), event: t('upcomingEventName3'), time: '6:00 PM - 8:00 PM' },
+    { date: t('upcomingEventDate4'), event: t('upcomingEventName4'), time: 'No School' },
+    { date: t('upcomingEventDate5'), event: t('upcomingEventName5'), time: '10:00 AM - 2:00 PM' }
   ];
 
   return (

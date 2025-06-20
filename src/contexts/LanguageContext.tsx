@@ -214,6 +214,23 @@ const translations = {
     stayConnected: 'Stay Connected',
     stayConnectedDesc: 'Subscribe to our newsletter for regular updates about school activities and important announcements.',
 
+    // Parent procedures Description
+    dropoffProceduresDesc: 'Students may be dropped off starting at 7:45 AM. Please use the designated drop-off area and remain in your vehicle. Staff will assist students exiting vehicles.',
+    pickupProceduresDesc: 'Regular dismissal begins at 3:30 PM. Please arrive promptly and display your pick-up tag. Late pick-ups may result in after-care charges.',
+
+    // Upcoming events
+    upcomingEventDate1: 'March 15',
+    upcomingEventDate2: 'March 22',
+    upcomingEventDate3: 'April 5',
+    upcomingEventDate4: 'April 12',
+    upcomingEventDate5: 'May 3',
+
+    upcomingEventName1: 'Parent-Teacher Conferences',
+    upcomingEventName2: 'Islamic Heritage Day',
+    upcomingEventName3: 'Science Fair',
+    upcomingEventName4: 'Spring Break Begins',
+    upcomingEventName5: 'Quran Recitation Competition',
+
     // Form fields
     studentFirstName: 'Student\'s First Name',
     studentLastName: 'Student\'s Last Name',
@@ -454,6 +471,23 @@ const translations = {
     stayConnected: 'Bog\'langan bo\'ling',
     stayConnectedDesc: 'Maktab faoliyatlari va muhim e\'lonlar haqida muntazam yangilanishlar uchun bizning yangiliklar byulletenimizga obuna bo\'ling.',
 
+    // Parent procedures Description
+    dropoffProceduresDesc: 'O‘quvchilarni ertalab soat 7:45 dan boshlab maktabga olib kelish mumkin. Iltimos, faqat belgilangan tushirish hududidan foydalaning va avtomobilingizdan tushmang. Xodimlar bolalarni mashinadan tushirishda yordam berishadi.',
+    pickupProceduresDesc: 'O‘quvchilarning muntazam chiqish vaqti soat 15:30 da boshlanadi. Iltimos, o‘z vaqtida keling va olib ketish belgisi ni ko‘rsatib turing. Kech olib ketish holatlarida qo‘shimcha g\'amxo\'rlik uchun to‘lovi olinishi mumkin.',
+
+    // Upcoming events
+    upcomingEventDate1: 'Mart 15',
+    upcomingEventDate2: 'Mart 22',
+    upcomingEventDate3: 'Aprel 5',
+    upcomingEventDate4: 'Aprel 12',
+    upcomingEventDate5: 'May 3',
+
+    upcomingEventName1: 'Ota-onalar va o‘qituvchilar uchrashuvi',
+    upcomingEventName2: 'Islomiy meros kuni',
+    upcomingEventName3: 'Ilmiy ko‘rgazma',
+    upcomingEventName4: 'Bahorgi ta’til boshlanishi',
+    upcomingEventName5: 'Qur’on tilovati bo‘yicha musobaqa',
+
     // Form fields
     studentFirstName: 'O\'quvchining ismi',
     studentLastName: 'O\'quvchining familiyasi',
@@ -692,6 +726,23 @@ const translations = {
     upcomingEventsDesc: 'Отметьте в своих календарях эти важные школьные мероприятия',
     stayConnected: 'Оставайтесь на связи',
     stayConnectedDesc: 'Подпишитесь на нашу рассылку для регулярных обновлений о школьных мероприятиях и важных объявлениях.',
+
+    // Parent procedures Description
+    dropoffProceduresDesc: 'Ученики могут прибывать в школу начиная с 7:45 утра. Пожалуйста, используйте специально отведённую зону высадки и оставайтесь в автомобиле. Персонал поможет детям выйти из машины.',
+    pickupProceduresDesc: 'Обычное время окончания занятий — 15:30. Пожалуйста, приходите вовремя и показывайте ваш бейдж для получения ребёнка. В случае опоздания может взиматься дополнительная плата за присмотр.',
+
+    // Upcoming events
+    upcomingEventDate1: 'Марта 15',
+    upcomingEventDate2: 'Марта 2',
+    upcomingEventDate3: 'Апреля 5',
+    upcomingEventDate4: 'Апреля 12',
+    upcomingEventDate5: 'Мая 3',
+
+    upcomingEventName1: 'Родительско-учительская конференция',
+    upcomingEventName2: 'День исламского наследия',
+    upcomingEventName3: 'Научная ярмарка',
+    upcomingEventName4: 'Начало весенних каникул',
+    upcomingEventName5: 'Конкурс чтения Корана',
 
     // Form fields
     studentFirstName: 'Имя ученика',
