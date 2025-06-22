@@ -55,19 +55,6 @@ const Programs: React.FC = () => {
     }
   ];
 
-  const dailySchedule = [
-    { time: t('dailyScheduleTime1'), activity: t('dailyScheduleActivity1')},
-    { time: t('dailyScheduleTime2'), activity: t('dailyScheduleActivity2')},
-    { time: t('dailyScheduleTime3'), activity: t('dailyScheduleActivity3')},
-    { time: t('dailyScheduleTime4'), activity: t('dailyScheduleActivity4')},
-    { time: t('dailyScheduleTime5'), activity: t('dailyScheduleActivity5')},
-    { time: t('dailyScheduleTime6'), activity: t('dailyScheduleActivity6')},
-    { time: t('dailyScheduleTime7'), activity: t('dailyScheduleActivity7')},
-    { time: t('dailyScheduleTime8'), activity: t('dailyScheduleActivity8')},
-    { time: t('dailyScheduleTime9'), activity: t('dailyScheduleActivity9')},
-    { time: t('dailyScheduleTime10'), activity: t('dailyScheduleActivity10')}
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -135,31 +122,6 @@ const Programs: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{subject.title}</h3>
                 <p className="text-gray-600 text-sm">{subject.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Daily Schedule */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('sampleDailySchedule')}</h2>
-            <p className="text-xl text-gray-600">{t('typicalDay')}</p>
-          </div>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            {dailySchedule.map((item, index) => (
-              <div key={index} className={`flex items-center p-4 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
-                <div className="flex items-center space-x-4 w-full">
-                  <div className="flex items-center justify-center w-3 h-3 bg-emerald-500 rounded-full"></div>
-                  <div className="text-sm font-medium text-emerald-600 w-32 flex-shrink-0">
-                    {item.time}
-                  </div>
-                  <div className="text-gray-700 flex-1">
-                    {item.activity}
-                  </div>
-                </div>
               </div>
             ))}
           </div>
