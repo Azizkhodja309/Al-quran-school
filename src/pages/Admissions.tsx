@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { CheckCircle, Calendar, DollarSign, HelpCircle } from 'lucide-react';
 import { languageChooser, useLanguage } from '../contexts/LanguageContext';
 import RegistrationForm from '../components/RegistrationForm';
@@ -6,7 +6,7 @@ import RegistrationForm from '../components/RegistrationForm';
 const Admissions: React.FC = () => {
   const { t, language: currentLanguage } = useLanguage();
   
-  console.log(currentLanguage);
+  // console.log(currentLanguage);
 
   const steps = [
     {

@@ -295,6 +295,14 @@ const translations = {
     dropoffProceduresDesc: 'Students may be dropped off starting at 7:45 AM. Please use the designated drop-off area and remain in your vehicle. Staff will assist students exiting vehicles.',
     pickupProceduresDesc: 'Regular dismissal begins at 3:30 PM. Please arrive promptly and display your pick-up tag. Late pick-ups may result in after-care charges.',
 
+    // Important dates
+    firstDayOfSchool: "First day of academic school year",
+    fallBreak: "Fall break",
+    winterBreak: "Winter break",
+    springBreak: "Spring break",
+    lastDayOfSchool: "Last day of school",
+    summerBreak: "Summer break",
+
     // Upcoming events
     upcomingEventDate1: 'March 15',
     upcomingEventDate2: 'March 22',
@@ -633,6 +641,14 @@ const translations = {
     dropoffProceduresDesc: 'O‘quvchilarni ertalab soat 7:45 dan boshlab maktabga olib kelish mumkin. Iltimos, faqat belgilangan tushirish hududidan foydalaning va avtomobilingizdan tushmang. Xodimlar bolalarni mashinadan tushirishda yordam berishadi.',
     pickupProceduresDesc: 'O‘quvchilarning muntazam chiqish vaqti soat 15:30 da boshlanadi. Iltimos, o‘z vaqtida keling va olib ketish belgisi ni ko‘rsatib turing. Kech olib ketish holatlarida qo‘shimcha g\'amxo\'rlik uchun to‘lovi olinishi mumkin.',
 
+    // Important dates
+    firstDayOfSchool: "Yangi o‘quv yilining birinchi kuni",
+    fallBreak: "Kuzgi ta’til",
+    winterBreak: "Qishki ta’til",
+    springBreak: "Bahorgi ta’til",
+    lastDayOfSchool: "Maktabning so‘nggi kuni",
+    summerBreak: "Yozgi ta’til",
+
     // Upcoming events
     upcomingEventDate1: 'Mart 15',
     upcomingEventDate2: 'Mart 22',
@@ -969,6 +985,14 @@ const translations = {
     // Parent procedures Description
     dropoffProceduresDesc: 'Ученики могут прибывать в школу начиная с 7:45 утра. Пожалуйста, используйте специально отведённую зону высадки и оставайтесь в автомобиле. Персонал поможет детям выйти из машины.',
     pickupProceduresDesc: 'Обычное время окончания занятий — 15:30. Пожалуйста, приходите вовремя и показывайте ваш бейдж для получения ребёнка. В случае опоздания может взиматься дополнительная плата за присмотр.',
+
+    // Important dates
+    firstDayOfSchool: "Первый учебный день",
+    fallBreak: "Осенние каникулы",
+    winterBreak: "Зимние каникулы",
+    springBreak: "Весенние каникулы",
+    lastDayOfSchool: "Последний учебный день",
+    summerBreak: "Летние каникулы",
 
     // Upcoming events
     upcomingEventDate1: 'Марта 15',
