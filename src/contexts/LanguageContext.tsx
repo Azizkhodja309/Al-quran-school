@@ -209,7 +209,8 @@ const translations = {
     acceptTerm1: 'I have read and agree to all terms and policies.',
     clearSignature: 'Clear Signature',
     errorSubmiting: 'There was an error submitting your application. Please try again or contact us directly.',
-
+    requiredSign: 'Please sign. By doing so, you agree to our terms and conditions.',
+    remindRequiredConset: 'Please review and accept to the terms and conditions in the application before submitting the form.',
     // Contact
     contactTitle: 'Contact Us',
     contactDesc: 'We\'d love to hear from you. Get in touch with us to learn more about our programs or schedule a visit.',
@@ -546,6 +547,8 @@ const translations = {
     acceptTerm1: 'Men barcha shartlar va siyosatlarni o‘qidim va roziman.',
     clearSignature: 'Imzoni tozalash',
     errorSubmiting: 'Arizangizni yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko\'ring yoki biz bilan to\'g\'ridan-to\'g\'ri bog\'laning.',
+    requiredSign: `Imzo qo'yishingiz iltimos qilib qolamiz. Bu orqali siz bizning shartlarimizga rozi bo'lasiz.`,
+    remindRequiredConset: 'Iltimos, shaklni yuborishdan oldin quyidagi ilovani ko\'rib chiqing va qabul qiling.',
 
 
     // Contact
@@ -864,6 +867,7 @@ const translations = {
 
     acceptTerms: 'Перед отправкой формы вы должны прочитать и принять наши Условия использования.',
     acceptforAccidentallyTreatment: '* В случае несчастного случая или болезни, если школа не может связаться с экстренными контактами и ситуация требует неотложной помощи, я разрешаю сотрудникам школы обратиться за экстренной медицинской помощью, включая скорую помощь и приёмное отделение. Я также разрешаю врачу оказать необходимое лечение за мой счёт (оставляя согласие).',
+    remindRequiredConset: 'Пожалуйста, ознакомьтесь с условиями и политиками, прежде чем подписывать и отправлять форму.',
 
     medicalHistory: 'Медицинская история учащегося',
     medicalTaking: 'Принимаемые лекарства',
@@ -884,6 +888,7 @@ const translations = {
     acceptTerm1: 'Я прочитал(а) и согласен(на) со всеми условиями и политиками.',
     clearSignature: 'Очистить подпись',
     errorSubmiting: 'Произошла ошибка при отправке вашей заявки. Пожалуйста, попробуйте еще раз или свяжитесь с нами напрямую.',
+    requiredSign: 'Пожалуйста, подпишите. Поступая таким образом, вы соглашаетесь с нашими условиями.',
 
     // Contact
     contactTitle: 'Свяжитесь с нами',
