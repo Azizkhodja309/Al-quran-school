@@ -248,29 +248,6 @@ const translations = {
     articleDate5: 'February 15, 2024',
     articleDate6: 'February 10, 2024',
 
-    // Dailiy schedule
-    dailyScheduleTime1: '8:00 - 8:30 AM',
-    dailyScheduleTime2: '8:30 - 9:30 AM',
-    dailyScheduleTime3: '9:30 - 10:30 AM',
-    dailyScheduleTime4: '10:30 - 10:45 AM',
-    dailyScheduleTime5: '10:45 - 11:45 AM',
-    dailyScheduleTime6: '11:45 AM - 12:45 PM',
-    dailyScheduleTime7: '12:45 - 1:45 PM',
-    dailyScheduleTime8: '1:45 - 2:30 PM',
-    dailyScheduleTime9: '2:30 - 3:15 PM',
-    dailyScheduleTime10: '3:15 - 3:30 PM',
-
-    dailyScheduleActivity1: 'Morning Assembly & Dua',
-    dailyScheduleActivity2: 'Quran Recitation',
-    dailyScheduleActivity3: 'Mathematics',
-    dailyScheduleActivity4: 'Snack Break',
-    dailyScheduleActivity5: 'English Language Arts',
-    dailyScheduleActivity6: 'Lunch & Prayer',
-    dailyScheduleActivity7: 'Islamic Studies',
-    dailyScheduleActivity8: 'Science/Social Studies',
-    dailyScheduleActivity9: 'Arts & Crafts',
-    dailyScheduleActivity10: 'Dismissal',
-
     // Parent Resources
     parentResourcesDesc: 'Everything parents need to stay informed and involved in their child\'s educational journey.',
     schoolCalendar: 'School Calendar',
@@ -585,30 +562,6 @@ const translations = {
     articleDate4: '2024-yil 20-fevral',
     articleDate5: '2024-yil 15-fevral',
     articleDate6: '2024-yil 10-fevral',
-
-
-    // Dailiy schedule
-    dailyScheduleTime1: '8:00 - 8:30 AM',
-    dailyScheduleTime2: '8:30 - 9:30 AM',
-    dailyScheduleTime3: '9:30 - 10:30 AM',
-    dailyScheduleTime4: '10:30 - 10:45 AM',
-    dailyScheduleTime5: '10:45 - 11:45 AM',
-    dailyScheduleTime6: '11:45 AM - 12:45 PM',
-    dailyScheduleTime7: '12:45 - 1:45 PM',
-    dailyScheduleTime8: '1:45 - 2:30 PM',
-    dailyScheduleTime9: '2:30 - 3:15 PM',
-    dailyScheduleTime10: '3:15 - 3:30 PM',
-
-    dailyScheduleActivity1: 'Tonggi yig‘ilish va duo',
-    dailyScheduleActivity2: 'Qur’on tilovati',
-    dailyScheduleActivity3: 'Matematika',
-    dailyScheduleActivity4: 'Yengil tamaddi uchun tanaffus',
-    dailyScheduleActivity5: 'Ingliz tili fanlari',
-    dailyScheduleActivity6: 'Tushlik va duolar / namoz',
-    dailyScheduleActivity7: 'Islomiy fanlar',
-    dailyScheduleActivity8: 'Fan/Sotsial fanlar',
-    dailyScheduleActivity9: 'San’at va hunarmandchilik',
-    dailyScheduleActivity10: 'Dars tugashi / Uyga jo‘natish',
 
     // Parent Resources
     parentResourcesDesc: 'Ota-onalar farzandlarining ta\'lim sayohatida xabardor bo\'lish va ishtirok etish uchun kerak bo\'lgan hamma narsa.',
@@ -925,31 +878,6 @@ const translations = {
     articleDate4: '20 февраля 2024 г.',
     articleDate5: '15 февраля 2024 г.',
     articleDate6: '10 февраля 2024 г.',
-
-
-
-    // Dailiy schedule
-    dailyScheduleTime1: '8:00 - 8:30 AM',
-    dailyScheduleTime2: '8:30 - 9:30 AM',
-    dailyScheduleTime3: '9:30 - 10:30 AM',
-    dailyScheduleTime4: '10:30 - 10:45 AM',
-    dailyScheduleTime5: '10:45 - 11:45 AM',
-    dailyScheduleTime6: '11:45 AM - 12:45 PM',
-    dailyScheduleTime7: '12:45 - 1:45 PM',
-    dailyScheduleTime8: '1:45 - 2:30 PM',
-    dailyScheduleTime9: '2:30 - 3:15 PM',
-    dailyScheduleTime10: '3:15 - 3:30 PM',
-
-    dailyScheduleActivity1: 'Утреннее собрание и дуа',
-    dailyScheduleActivity2: 'Чтение Корана',
-    dailyScheduleActivity3: 'Математика',
-    dailyScheduleActivity4: 'Перерыв на перекус',
-    dailyScheduleActivity5: 'Английский язык и литература',
-    dailyScheduleActivity6: 'Обед и молитва',
-    dailyScheduleActivity7: 'Исламские науки',
-    dailyScheduleActivity8: 'Естественные / Общественные науки',
-    dailyScheduleActivity9: 'Изобразительное искусство и ремесла',
-    dailyScheduleActivity10: 'Окончание занятий / Распуск учащихся',
 
     // Parent Resources
     parentResourcesDesc: 'Все, что нужно родителям, чтобы оставаться информированными и участвовать в образовательном путешествии своего ребенка.',
