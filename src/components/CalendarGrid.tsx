@@ -16,17 +16,22 @@ const importantDates: Record<string, {
   "2025-10-22": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
   "2025-10-23": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
   "2025-10-24": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
-  "2025-12-29": { label: "Winter break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2025-12-30": { label: "Winter break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2025-12-31": { label: "Winter break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2026-1-1": { label: "Winter break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2026-1-2": { label: "Winter break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+  "2025-12-29": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+  "2025-12-30": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+  "2025-12-31": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+  "2026-1-1": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+  "2026-1-2": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+  "2026-3-16": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+  "2026-3-17": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+  "2026-3-18": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+  "2026-3-19": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+  "2026-3-20": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
   "2026-5-22": { label: "Last day of school", color: "bg-teal-100 text-teal-800 border border-teal-200" },
-  "2026-5-25": { label: "Summer break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 4 },
-  "2026-5-26": { label: "Summer break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 4 },
-  "2026-5-27": { label: "Summer break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 4 },
-  "2026-5-28": { label: "Summer break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 4 },
-  "2026-5-29": { label: "Summer break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 4 }
+  "2026-5-25": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+  "2026-5-26": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+  "2026-5-27": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+  "2026-5-28": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+  "2026-5-29": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 }
 };
 
 const CalendarGrid: React.FC = () => {
@@ -147,9 +152,10 @@ const CalendarGrid: React.FC = () => {
           {Object.entries({
             "bg-emerald-100 text-emerald-800 border-emerald-200": "First day of school",
             "bg-amber-200 text-amber-800 border-amber-200": "Fall break",
-            "bg-rose-100 text-rose-800 border-rose-200": "Winter break",
+            "bg-sky-100 text-sky-800 border-sky-200": "Winter break",
+            "bg-rose-100 text-rose-800 border-rose-200":"Spring break",
             "bg-teal-100 text-teal-800 border-teal-200": "Last day of school",
-            "bg-sky-100 text-sky-800 border-sky-200": "Summer break"
+            "bg-green-200 text-sky-800 border border-green-400": "Summer break"
           }).map(([color, label]) => (
             <div key={label} className="flex items-center">
               <div className={`w-4 h-4 rounded-full mr-2 ${color}`}></div>
