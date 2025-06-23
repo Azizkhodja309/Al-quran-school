@@ -184,8 +184,10 @@ const translations = {
     period5: 'August',
     application5: 'Enrollment Finalization',
 
-    registrationForm: 'Student Registration Form 2024-2025',
+    registrationForm: 'Student Registration Form 2025-2026',
     select: 'Select...',
+
+    acceptTerms: 'Before submitting the form, you must read and accept our Terms and Conditions.',
 
 
     // Contact
@@ -510,7 +512,7 @@ const translations = {
     program: 'Dastur',
     financialAid: 'Moliyaviy yordam',
 
-    registrationForm: 'Talaba ro\'yxatga olish shakli 2024-2025',
+    registrationForm: 'Talaba ro\'yxatga olish shakli 2025-2026',
     select: 'Tanlang...',
 
     period1: `Dekabr - fevral`,
@@ -523,6 +525,8 @@ const translations = {
     application4: 'Orientatsiya va maktab boshlanadi',
     period5: 'Avgust',
     application5: 'Ro\'yxatga olishni yakunlash',
+
+    acceptTerms: `Formani yuborishdan oldin, siz bizning Foydalanish shartlarimizni o‘qib chiqishingiz va qabul qilishingiz kerak.`,
 
     // Contact
     contactTitle: 'Biz bilan aloqa',
@@ -848,7 +852,7 @@ const translations = {
     program: 'Программа',
     financialAid: 'Финансовая помощь',
 
-    registrationForm: 'Регистрационная форма студента 2024-2025',
+    registrationForm: 'Регистрационная форма студента 2025-2026',
     select: 'Выбирать...',
 
     period1: 'Декабрь - Февраль',
@@ -861,6 +865,8 @@ const translations = {
     application4: 'Ориентация и начало школы',
     period5: 'Август',
     application5: 'Завершение регистрации',
+
+    acceptTerms: 'Перед отправкой формы вы должны прочитать и принять наши Условия использования.',
 
     // Contact
     contactTitle: 'Свяжитесь с нами',
