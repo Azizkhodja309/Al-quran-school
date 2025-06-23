@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { languageChooser, useLanguage } from '../contexts/LanguageContext';
 
 interface ContactFormData {
   fullName: string;
@@ -189,7 +189,7 @@ const Contact: React.FC = () => {
             <div className="text-center p-6 bg-purple-50 rounded-lg">
               <Clock className="h-12 w-12 text-purple-600 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('schoolHours')}</h3>
-              <p className="text-gray-600">Monday - Friday</p>
+              <p className="text-gray-600">{languageChooser('Monday - Friday', 'Dushanba – Juma', 'Понедельник – Пятница')}</p>
               <p className="text-gray-600">8:00 AM - 3:30 PM</p>
             </div>
           </div>
