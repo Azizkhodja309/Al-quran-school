@@ -188,7 +188,27 @@ const translations = {
     select: 'Select...',
 
     acceptTerms: 'Before submitting the form, you must read and accept our Terms and Conditions.',
+    acceptforAccidentallyTreatment: '* In the event of an accident or illness, if the school is unable to contact emergency contacts and the emergency is acute, I hereby authorize school staff to go to emergency medical care, including ambulance, emergency room. I hereby authorize the responsible physician to perform any emergency treatment necessary at my expense (leave initiation of consent) ',
 
+    medicalHistory: 'Student\'s Medical History',
+    medicalTaking: 'Medication currently taking',
+    allergy: 'Allergy to medications',
+    foodAllergy: 'Food allergies',
+    enviromentalAllergy: 'Environmental allergies',
+    chronicConditions: 'Chronic health conditions',
+    headInjury: 'Did the student ever suffer a head injury?',
+    diagnosesByDoctor: 'Diagnoses made by a doctor',
+    medicalConsent: 'Consent for emergency treatment',
+    reviewCarefully: '⚠️ Please Review Carefully',
+    conset1: 'I authorize the school to seek emergency medical care for my child.',
+    conset2: 'This may include ambulance transport or emergency room admission.',
+    conset3: 'I accept full responsibility for any medical expenses incurred.',
+    conset4: 'I understand that the school will make every effort to contact me or my emergency contacts in case of an emergency.',
+    parentSignature: 'Parent\'s Signature',
+    acceptTerm: 'You were agree to all terms and policies. ✔️',
+    acceptTerm1: 'I have read and agree to all terms and policies.',
+    clearSignature: 'Clear Signature',
+    errorSubmiting: 'There was an error submitting your application. Please try again or contact us directly.',
 
     // Contact
     contactTitle: 'Contact Us',
@@ -391,6 +411,7 @@ const translations = {
     quickLink: 'Tez havolalar',
     allRightReserved: 'Al-Quron islom maktabi. Barcha huquqlar himoyalangan.',
     requiredFields: `Majburiy maydonlar. Ushbu shaklni topshirish orqali siz arizangiz bo'yicha Al- Quron Islom maktabi bilan bog'lanishga rozilik bildirasiz.`,
+
     // Programs
     programsTitle: 'Bizning dasturlarimiz',
     kindergarten: 'Bog\'cha dasturi',
@@ -503,7 +524,29 @@ const translations = {
     period5: 'Avgust',
     application5: 'Ro\'yxatga olishni yakunlash',
 
-    acceptTerms: `Formani yuborishdan oldin, siz bizning Foydalanish shartlarimizni o‘qib chiqishingiz va qabul qilishingiz kerak.`,
+    acceptTerms: 'Formani yuborishdan oldin, siz bizning Foydalanish shartlarimizni o‘qib chiqishingiz va qabul qilishingiz kerak.',
+    acceptforAccidentallyTreatment: '* Baxtsiz hodisa yoki kasallik yuz bersa va maktab favqulodda aloqa uchun shaxslar bilan bog‘lana olmasa, maktab xodimlariga tez tibbiy yordam ko‘rsatishga (shu jumladan tez yordam chaqirish va kasalxonaga olib borish) ruxsat beraman. Shuningdek, zarurat tug‘ilganda shifokor tomonidan kerakli davolashni amalga oshirishga roziman (bu xizmat xarajatlari mening hisobimdan bo‘ladi).',
+
+    medicalHistory: 'Talabaning tibbiy tarixi',
+    medicalTaking: 'Hozir qabul qilayotgan dori vositalari',
+    allergy: 'Dori vositalariga allergiya',
+    foodAllergy: 'Oziq-ovqatga allergiya',
+    enviromentalAllergy: 'Atrof-muhitga allergiya',
+    chronicConditions: 'Surunkali kasalliklar',
+    headInjury: 'Talaba bosh miya jarohati olganmi?',
+    diagnosesByDoctor: 'Shifokor tomonidan qo‘yilgan tashxis',
+    medicalConsent: 'Favqulodda davolashga rozilik',
+    reviewCarefully: '⚠️ Iltimos, diqqat bilan o‘qing',
+    conset1: 'Farzandim uchun maktabga tez tibbiy yordamga murojaat qilishga ruxsat beraman.',
+    conset2: 'Bunga tez yordam mashinasida olib ketish yoki shoshilinch bo‘limga murojaat qilish kiradi.',
+    conset3: 'Tibbiy xarajatlarning barchasi uchun javobgarlikni o‘z zimmamga olaman.',
+    conset4: 'Favqulodda holatda maktab men yoki favqulodda aloqa shaxslari bilan bog‘lanishga harakat qilishi tushunarli.',
+    parentSignature: 'Ota-onaning imzosi',
+    acceptTerm: 'Siz barcha shartlar va siyosatlarga rozilik bildirdingiz. ✔️',
+    acceptTerm1: 'Men barcha shartlar va siyosatlarni o‘qidim va roziman.',
+    clearSignature: 'Imzoni tozalash',
+    errorSubmiting: 'Arizangizni yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko\'ring yoki biz bilan to\'g\'ridan-to\'g\'ri bog\'laning.',
+
 
     // Contact
     contactTitle: 'Biz bilan aloqa',
@@ -820,6 +863,27 @@ const translations = {
     application5: 'Завершение регистрации',
 
     acceptTerms: 'Перед отправкой формы вы должны прочитать и принять наши Условия использования.',
+    acceptforAccidentallyTreatment: '* В случае несчастного случая или болезни, если школа не может связаться с экстренными контактами и ситуация требует неотложной помощи, я разрешаю сотрудникам школы обратиться за экстренной медицинской помощью, включая скорую помощь и приёмное отделение. Я также разрешаю врачу оказать необходимое лечение за мой счёт (оставляя согласие).',
+
+    medicalHistory: 'Медицинская история учащегося',
+    medicalTaking: 'Принимаемые лекарства',
+    allergy: 'Аллергия на медикаменты',
+    foodAllergy: 'Пищевая аллергия',
+    enviromentalAllergy: 'Аллергия на окружающую среду',
+    chronicConditions: 'Хронические заболевания',
+    headInjury: 'Были ли у ученика травмы головы?',
+    diagnosesByDoctor: 'Диагноз, поставленный врачом',
+    medicalConsent: 'Согласие на экстренное лечение',
+    reviewCarefully: '⚠️ Пожалуйста, внимательно ознакомьтесь',
+    conset1: 'Я разрешаю школе обращаться за экстренной медицинской помощью для моего ребёнка.',
+    conset2: 'Это может включать транспортировку на скорой помощи или обращение в приёмное отделение.',
+    conset3: 'Я беру на себя полную ответственность за все понесённые медицинские расходы.',
+    conset4: 'Я понимаю, что школа предпримет все усилия, чтобы связаться со мной или экстренными контактами в случае чрезвычайной ситуации.',
+    parentSignature: 'Подпись родителя',
+    acceptTerm: 'Вы согласны со всеми условиями и политиками. ✔️',
+    acceptTerm1: 'Я прочитал(а) и согласен(на) со всеми условиями и политиками.',
+    clearSignature: 'Очистить подпись',
+    errorSubmiting: 'Произошла ошибка при отправке вашей заявки. Пожалуйста, попробуйте еще раз или свяжитесь с нами напрямую.',
 
     // Contact
     contactTitle: 'Свяжитесь с нами',
@@ -969,7 +1033,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   const t = (key: string): string => {
     return translations[language][key as keyof typeof translations.en] || key;
   };
-  
+
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
