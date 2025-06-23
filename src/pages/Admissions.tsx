@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle, Calendar, DollarSign, HelpCircle } from 'lucide-react';
 import { languageChooser, useLanguage } from '../contexts/LanguageContext';
 import RegistrationForm from '../components/RegistrationForm';

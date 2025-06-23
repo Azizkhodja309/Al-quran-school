@@ -78,6 +78,8 @@ const RegistrationForm: React.FC = () => {
         parentSignature: signatureDataUrl
       }));
 
+      setShowRequiredSign(false);
+
       setFormData(prev => ({
         ...prev,
         parentSignature: signatureDataUrl || ''
@@ -88,6 +90,8 @@ const RegistrationForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSubmit, setShowSubmit] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [remindRequiredConset, setRemindRequiredConset] = useState(false);
+  const [showRequiredSign, setShowRequiredSign] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -532,12 +536,17 @@ const RegistrationForm: React.FC = () => {
         </div>
 
         {!showSubmit &&
-          <div className="bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+          <div className={remindRequiredConset ? "bg-red-50 p-4 border border-red-200 rounded-lg cursor-pointer hover:bg-red-100 transition-colors duration-200" : "bg-gray-50 p-4 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors duration-200"}
             onClick={() => setShowModal(true)}
           >
             <p className="text-sm text-red-700">
               <span className="text-red-500">*</span> {t('acceptTerms')}
             </p>
+            {remindRequiredConset && (
+              <p className="text-sm text-red-500 mt-2">
+                <span className="text-red-500">*</span>{t('remindRequiredConset')}
+              </p>
+            )}
           </div>
         }
 
@@ -573,6 +582,13 @@ const RegistrationForm: React.FC = () => {
                   </ul>
                 </div>
 
+                {showRequiredSign && <div
+                  className="bg-gray-50 p-4 rounded-lg text-center hover:bg-gray-100 transition cursor-pointer"
+                >
+                  <label className="block text-sm font-medium text-red-700">
+                    {t('requiredSign')} <span className="text-red-500">*</span>
+                  </label>
+                </div>}
 
                 {/* Signature pad */}
                 <div>
@@ -601,16 +617,25 @@ const RegistrationForm: React.FC = () => {
                   </div>
                 </div>
 
+
                 {/* Final Agreement */}
                 <div
                   className="bg-gray-100 p-4 rounded-lg text-center hover:bg-gray-200 transition cursor-pointer"
                   onClick={() => {
+                    if (
+                      !signatureCanvasRef.current ||
+                      signatureCanvasRef.current.isEmpty()
+                    ) {
+                      setShowRequiredSign(true);
+                      return;
+                    }
                     saveSignature();
                     setFormData(prev => ({
                       ...prev,
                       parentSignDate: new Date().toISOString(),
                       acceptforAccidentallyTreatment: 'yes',
                     }));
+                    setRemindRequiredConset(false);
                     setShowSubmit(true);
                     setShowModal(false);
                   }}
@@ -641,14 +666,24 @@ const RegistrationForm: React.FC = () => {
           </div>
         }
 
-        {
-          showSubmit &&
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-emerald-600 text-white py-3 px-4 rounded-md font-medium hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center"
-          >
-            {isSubmitting ? (
+
+        <button
+          type={!showSubmit ? "button" : "submit"}
+          disabled={showSubmit ? isSubmitting : false}
+          onClick={() => {
+            if (!signatureCanvasRef.current ||
+              signatureCanvasRef.current.isEmpty()) {
+              setRemindRequiredConset(true);
+            }
+          }}
+          className={
+            !showSubmit
+              ? "w-full bg-gray-200 text-white py-3 px-4 rounded-md font-medium hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center"
+              : "w-full bg-emerald-600 text-white py-3 px-4 rounded-md font-medium hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 flex items-center justify-center"
+          }
+        >
+          {
+            isSubmitting ? (
               <>
                 <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -659,8 +694,8 @@ const RegistrationForm: React.FC = () => {
             ) : (
               t('submit')
             )}
-          </button>
-        }
+        </button>
+
       </form >
     </div >
   );
