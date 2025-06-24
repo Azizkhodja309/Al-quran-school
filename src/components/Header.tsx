@@ -16,7 +16,7 @@ const Header: React.FC = () => {
     { name: t('admissions'), href: '/admissions' },
     { name: t('parentResources'), href: '/parent-resources' },
     { name: t('gallery'), href: '/gallery' },
-    { name: t('news'), href: '/news' },
+    // { name: t('news'), href: '/news' },
     { name: t('contact'), href: '/contact' },
   ];
 

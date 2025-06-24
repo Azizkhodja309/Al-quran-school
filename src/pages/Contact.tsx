@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { languageChooser, useLanguage } from '../contexts/LanguageContext';
 
 interface ContactFormData {
   fullName: string;
@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
     inquiryType: '',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -158,16 +158,16 @@ const Contact: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t('contactTitle')}
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('contactDesc')}
-            </p>
-          </div>
+      <section className="relative min-h-[40vh] from-emerald-50 to-blue-50 bg-gradient-to-tr overflow-hidden">
+        <div className="absolute inset-0 backdrop-blur-md bg-white/10" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            {t('contactTitle')}
+          </h1>
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            {t('contactDesc')}
+          </p>
         </div>
       </section>
 
@@ -189,7 +189,7 @@ const Contact: React.FC = () => {
             <div className="text-center p-6 bg-purple-50 rounded-lg">
               <Clock className="h-12 w-12 text-purple-600 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{t('schoolHours')}</h3>
-              <p className="text-gray-600">Monday - Friday</p>
+              <p className="text-gray-600">{languageChooser('Monday - Friday', 'Dushanba – Juma', 'Понедельник – Пятница')}</p>
               <p className="text-gray-600">8:00 AM - 3:30 PM</p>
             </div>
           </div>
@@ -203,7 +203,7 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('contactForm')}</h2>
             <p className="text-xl text-gray-600">{t('contactFormDesc')}</p>
           </div>
-          
+
           <div className="bg-white rounded-lg shadow-lg p-8">
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
@@ -231,7 +231,7 @@ const Contact: React.FC = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     {t('email')} <span className="text-red-500">*</span>
@@ -260,7 +260,7 @@ const Contact: React.FC = () => {
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                   />
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     {t('inquiryType')}
@@ -331,7 +331,7 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('locations')}</h2>
             <p className="text-xl text-gray-600">{t('locationsDesc')}</p>
           </div>
-          
+
           <div className="space-y-12">
             {locations.map((location, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">

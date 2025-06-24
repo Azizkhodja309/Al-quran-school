@@ -1,40 +1,55 @@
 import React, { useState } from "react";
-
-const monthNames = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-
-const importantDates: Record<string, {
-  label: string;
-  color: string;
-  range?: number;
-}> = {
-  "2025-8-18": { label: "First day of academic school year", color: "bg-emerald-100 text-emerald-800 border border-emerald-200" },
-  "2025-10-20": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
-  "2025-10-21": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
-  "2025-10-22": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
-  "2025-10-23": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
-  "2025-10-24": { label: "Fall break", color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
-  "2025-12-29": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
-  "2025-12-30": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
-  "2025-12-31": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
-  "2026-1-1": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
-  "2026-1-2": { label: "Winter break", color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
-  "2026-3-16": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2026-3-17": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2026-3-18": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2026-3-19": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2026-3-20": { label: "Spring break", color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
-  "2026-5-22": { label: "Last day of school", color: "bg-teal-100 text-teal-800 border border-teal-200" },
-  "2026-5-25": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
-  "2026-5-26": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
-  "2026-5-27": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
-  "2026-5-28": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
-  "2026-5-29": { label: "Summer break", color: "bg-green-200 text-sky-800 border border-green-400", range: 4 }
-};
+import { languageChooser, useLanguage } from "../contexts/LanguageContext";
 
 const CalendarGrid: React.FC = () => {
+  const { t, language: currentLanguage } = useLanguage();
+
+  const monthNames_en = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  const monthNames_uz = [
+    "Yanvar", "Fevral", "Mart", "Aprel", "May", "Iyun",
+    "Iyul", "Avgust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"
+  ];
+
+  const monthNames_ru = [
+    "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+  ];
+
+  const monthNames = currentLanguage === 'en' ? monthNames_en : currentLanguage === 'uz' ? monthNames_uz : monthNames_ru;
+
+  const importantDates: Record<string, {
+    label: string;
+    color: string;
+    range?: number;
+  }> = {
+    "2025-8-18": { label: t('firstDayOfSchool'), color: "bg-emerald-100 text-emerald-800 border border-emerald-200" },
+    "2025-10-20": { label: t('fallBreak'), color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
+    "2025-10-21": { label: t('fallBreak'), color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
+    "2025-10-22": { label: t('fallBreak'), color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
+    "2025-10-23": { label: t('fallBreak'), color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
+    "2025-10-24": { label: t('fallBreak'), color: "bg-amber-200 text-amber-800 border border-amber-200", range: 4 },
+    "2025-12-29": { label: t('winterBreak'), color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+    "2025-12-30": { label: t('winterBreak'), color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+    "2025-12-31": { label: t('winterBreak'), color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+    "2026-1-1": { label: t('winterBreak'), color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+    "2026-1-2": { label: t('winterBreak'), color: "bg-sky-100 text-sky-800 border border-sky-200", range: 5 },
+    "2026-3-16": { label: t('springBreak'), color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+    "2026-3-17": { label: t('springBreak'), color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+    "2026-3-18": { label: t('springBreak'), color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+    "2026-3-19": { label: t('springBreak'), color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+    "2026-3-20": { label: t('springBreak'), color: "bg-rose-100 text-rose-800 border border-rose-200", range: 5 },
+    "2026-5-22": { label: t('lastDayOfSchool'), color: "bg-teal-100 text-teal-800 border border-teal-200" },
+    "2026-5-25": { label: t('summerBreak'), color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+    "2026-5-26": { label: t('summerBreak'), color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+    "2026-5-27": { label: t('summerBreak'), color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+    "2026-5-28": { label: t('summerBreak'), color: "bg-green-200 text-sky-800 border border-green-400", range: 4 },
+    "2026-5-29": { label: t('summerBreak'), color: "bg-green-200 text-sky-800 border border-green-400", range: 4 }
+  };
+
   const [selectedDate, setSelectedDate] = useState<{
     date: string;
     event?: string;
@@ -87,10 +102,12 @@ const CalendarGrid: React.FC = () => {
     return days;
   };
 
+  const noEventText = languageChooser("No special events", "Maxsus tadbirlar yoʻq", "Особых мероприятий нет")
+
   const handleDateClick = (day: number | null, month: number, year: number, event?: string) => {
     if (!day) return;
     const dateStr = `${monthNames[month]} ${day}, ${year}`;
-    setSelectedDate({ date: dateStr, event: event || "No special events" });
+    setSelectedDate({ date: dateStr, event: (event || noEventText) });
   };
 
   return (
@@ -147,15 +164,17 @@ const CalendarGrid: React.FC = () => {
       </div>
 
       <div className="mt-8 p-4 bg-emerald-50 rounded-lg border border-emerald-200">
-        <h3 className="text-lg font-semibold mb-3 text-emerald-800">Important Dates Legend</h3>
+        <h3 className="text-lg font-semibold mb-3 text-emerald-800">
+          {languageChooser('Important Dates Legend','Muhim sanalar sharhi','Условные обозначения важных дат')}
+        </h3>
         <div className="flex flex-wrap gap-4">
           {Object.entries({
-            "bg-emerald-100 text-emerald-800 border-emerald-200": "First day of school",
-            "bg-amber-200 text-amber-800 border-amber-200": "Fall break",
-            "bg-sky-100 text-sky-800 border-sky-200": "Winter break",
-            "bg-rose-100 text-rose-800 border-rose-200":"Spring break",
-            "bg-teal-100 text-teal-800 border-teal-200": "Last day of school",
-            "bg-green-200 text-sky-800 border border-green-400": "Summer break"
+            "bg-emerald-100 text-emerald-800 border-emerald-200": t('firstDayOfSchool'),
+            "bg-amber-200 text-amber-800 border-amber-200": t('fallBreak'),
+            "bg-sky-100 text-sky-800 border-sky-200": t('winterBreak'),
+            "bg-rose-100 text-rose-800 border-rose-200": t('springBreak'),
+            "bg-teal-100 text-teal-800 border-teal-200": t('lastDayOfSchool'),
+            "bg-green-200 text-sky-800 border border-green-400": t('summerBreak')
           }).map(([color, label]) => (
             <div key={label} className="flex items-center">
               <div className={`w-4 h-4 rounded-full mr-2 ${color}`}></div>

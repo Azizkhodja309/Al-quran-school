@@ -32,23 +32,23 @@ const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t('aboutTitle')}
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {currentLanguage === 'en'? 
-              'Dedicated to providing quality Islamic education that prepares children for success in both this world and the hereafter.':
-              currentLanguage === 'uz'?
-              'Farzandlarni bu dunyoda ham, oxiratda ham muvaffaqiyatga tayyorlaydigan sifatli islomiy taʼlim berishga bagʻishlangan.':
-              'Цель проекта — предоставление качественного исламского образования, которое готовит детей к успеху как в этом мире, так и в загробной жизни.'
-              }
-            </p>
-          </div>
+      <section className="relative max-h-[40vh] from-emerald-50 to-blue-50 bg-gradient-to-tr overflow-hidden">
+        <div className="absolute inset-0 bg-white/10" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 inline-block px-6 py-3 ">
+            {t('aboutTitle')}
+          </h1>
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto px-6 py-3">
+            {currentLanguage === 'en'
+              ? 'Dedicated to providing quality Islamic education that prepares children for success in both this world and the hereafter.'
+              : currentLanguage === 'uz'
+                ? 'Farzandlarni bu dunyoda ham, oxiratda ham muvaffaqiyatga tayyorlaydigan sifatli islomiy taʼlim berishga bagʻishlangan.'
+                : 'Цель проекта — предоставление качественного исламского образования, которое готовит детей к успеху как в этом мире, так и в загробной жизни.'}
+          </p>
         </div>
       </section>
+
 
       {/* Mission & Vision */}
       <section className="py-16">
@@ -57,13 +57,13 @@ const About: React.FC = () => {
             <div className="bg-emerald-50 p-8 rounded-lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('mission')}</h2>
               <p className="text-gray-700 leading-relaxed">
-                {t('missionText')} 
+                {t('missionText')}
               </p>
             </div>
             <div className="bg-blue-50 p-8 rounded-lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('philosophy')}</h2>
               <p className="text-gray-700 leading-relaxed">
-                {t('philosophyText')}  
+                {t('philosophyText')}
               </p>
             </div>
           </div>

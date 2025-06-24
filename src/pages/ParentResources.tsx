@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Calendar,
   Download,
   Clock,
   Car,
+  Newspaper,
   Shirt,
-  Book
+  Book,
 } from "lucide-react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -21,79 +23,88 @@ const ParentResources: React.FC = () => {
       title: t("schoolCalendar"),
       description: t("schoolCalendarDesc"),
       action: t("viewCalendar"),
-      onClick: () => setOpen(true)
+      onClick: () => setOpen(true),
     },
     {
       icon: <Book className="h-8 w-8 text-emerald-600" />,
       title: t("supplyLists"),
       description: t("supplyListsDesc"),
-      action: t("downloadLists")
+      action: t("downloadLists"),
     },
+    {
+      icon: <Newspaper className="h-8 w-8 text-emerald-600" />,
+      title: t("newsletter"),
+      description: t("newsletterDesc"),
+      action: t("viewNewsletter"),
+    },
+
     {
       icon: <Shirt className="h-8 w-8 text-emerald-600" />,
       title: t("uniformPolicy"),
       description: t("uniformPolicyDesc"),
-      action: t("viewPolicy")
+      action: t("viewPolicy"),
     },
     {
       icon: <Download className="h-8 w-8 text-emerald-600" />,
       title: t("parentHandbook"),
       description: t("parentHandbookDesc"),
-      action: t("downloadPDF")
-    }
+      action: t("downloadPDF"),
+    },
   ];
 
   const procedures = [
     {
       icon: <Car className="h-6 w-6 text-emerald-600" />,
       title: t("dropoffProcedures"),
-      description: t("dropoffProceduresDesc")
+      description: t("dropoffProceduresDesc"),
     },
     {
       icon: <Clock className="h-6 w-6 text-emerald-600" />,
       title: t("pickupProcedures"),
-      description: t("pickupProceduresDesc")
-    }
+      description: t("pickupProceduresDesc"),
+    },
   ];
 
   const upcomingEvents = [
     {
       date: t("upcomingEventDate1"),
       event: t("upcomingEventName1"),
-      time: "4:00 PM - 7:00 PM"
+      time: "4:00 PM - 7:00 PM",
     },
     {
       date: t("upcomingEventDate2"),
       event: t("upcomingEventName2"),
-      time: "9:00 AM - 12:00 PM"
+      time: "9:00 AM - 12:00 PM",
     },
     {
       date: t("upcomingEventDate3"),
       event: t("upcomingEventName3"),
-      time: "6:00 PM - 8:00 PM"
+      time: "6:00 PM - 8:00 PM",
     },
     {
       date: t("upcomingEventDate4"),
       event: t("upcomingEventName4"),
-      time: "No School"
+      time: "No School",
     },
     {
       date: t("upcomingEventDate5"),
       event: t("upcomingEventName5"),
-      time: "10:00 AM - 2:00 PM"
-    }
+      time: "10:00 AM - 2:00 PM",
+    },
   ];
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-emerald-50 to-blue-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="relative min-h-[40vh] from-emerald-50 to-blue-50 bg-gradient-to-tr overflow-hidden">
+          <div className="absolute inset-0 backdrop-blur-md bg-white/10" />
+
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               {t("parentResources")}
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
               {t("parentResourcesDesc")}
             </p>
           </div>
@@ -102,25 +113,33 @@ const ParentResources: React.FC = () => {
         {/* Resources Grid */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
               {resources.map((resource, index) => (
                 <div
                   key={index}
                   className="text-center p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
                 >
-                  <div className="flex justify-center mb-4">{resource.icon}</div>
+                  <div className="flex justify-center mb-4">
+                    {resource.icon}
+                  </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {resource.title}
                   </h3>
                   <p className="text-gray-600 text-sm mb-4">
                     {resource.description}
                   </p>
-                  <button
-                    className="text-emerald-600 hover:text-emerald-700 font-medium text-sm transition-colors duration-200"
-                    onClick={resource.onClick}
-                  >
-                    {resource.action}
-                  </button>
+                  {index === 2 ? (
+                    <Link
+                      to="/news"
+                      className={`text-emerald-600 hover:text-emerald-700 font-medium text-sm transition-colors duration-200 `}
+                    >
+                      {resource.action}
+                    </Link>
+                  ) : (
+                    <button onClick={resource.onClick} className="text-emerald-600 hover:text-emerald-700 font-medium text-sm transition-colors duration-200">
+                      {resource.action}
+                    </button>
+                  )}
                 </div>
               ))}
             </div>
