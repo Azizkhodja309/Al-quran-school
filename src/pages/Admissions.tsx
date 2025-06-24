@@ -190,7 +190,8 @@ const Admissions: React.FC = () => {
       </section>
 
       {/* Registration Form */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50"
+        id='registrationFormSubmitted'>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <RegistrationForm />
         </div>

@@ -212,7 +212,6 @@ const RegistrationForm: React.FC = () => {
         parentSignature: '',
         parentSignDate: '',
         acceptforAccidentallyTreatment: '',
-
       });
 
       setShowModal(false);
@@ -225,11 +224,11 @@ const RegistrationForm: React.FC = () => {
       }
       setIsNotFilled(false);
 
-      const submittedElement = document.getElementById('registrationFormSubmitted');
+      const submittedElement = await document.getElementById('registrationFormSubmitted');
+      console.log('submittedElement:', submittedElement);
       if (submittedElement) {
-        // submittedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        
+        const distanceToTop = submittedElement.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: distanceToTop-100, behavior: 'smooth' });
       }
 
 
@@ -243,8 +242,8 @@ const RegistrationForm: React.FC = () => {
 
   if (submitted) {
     return (
-      <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center"
-        id='registrationFormSubmitted'
+      <div
+        className="bg-green-50 border border-green-200 rounded-lg p-6 text-center"
       >
         <div className="flex justify-center mb-4">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
@@ -275,6 +274,7 @@ const RegistrationForm: React.FC = () => {
         </button>
       </div>
     );
+
   }
 
   return (
