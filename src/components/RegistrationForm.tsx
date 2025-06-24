@@ -214,6 +214,7 @@ const RegistrationForm: React.FC = () => {
         acceptforAccidentallyTreatment: '',
 
       });
+
       setShowModal(false);
       setShowSubmit(false);
       setRemindRequiredConset(false);
@@ -222,7 +223,15 @@ const RegistrationForm: React.FC = () => {
       if (signatureCanvasRef.current) {
         signatureCanvasRef.current.clear();
       }
-      console.log('Form submitted successfully');
+      setIsNotFilled(false);
+
+      const submittedElement = document.getElementById('registrationFormSubmitted');
+      if (submittedElement) {
+        // submittedElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+      }
+
 
     } catch (error) {
       console.error('Form submission error:', error);
@@ -234,7 +243,9 @@ const RegistrationForm: React.FC = () => {
 
   if (submitted) {
     return (
-      <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+      <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center"
+        id='registrationFormSubmitted'
+      >
         <div className="flex justify-center mb-4">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
             <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -248,11 +259,12 @@ const RegistrationForm: React.FC = () => {
         <p className="text-green-700 mb-4">
           {t('submitDiscus')}
         </p>
+
         <button
           onClick={() => {
             setSubmitted(false)
             setIsNotFilled(false);
-            setShowSubmit(false); 
+            setShowSubmit(false);
             setShowModal(false);
             setRemindRequiredConset(false);
             setShowRequiredSign(false);
