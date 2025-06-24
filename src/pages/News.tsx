@@ -63,8 +63,6 @@ const News: React.FC = () => {
     }
   ];
 
-
-
   const articles_uz = [
     {
       id: 1,
@@ -121,8 +119,6 @@ const News: React.FC = () => {
       image: 'https://i.postimg.cc/prkrmZv0/photo-2025-06-04-12-19-42.jpg'
     }
   ];
-
-
 
   const articles_ru = [
     {
@@ -183,7 +179,6 @@ const News: React.FC = () => {
 
   const articles = currentLanguage === 'en' ? articles_en : currentLanguage === 'uz' ? articles_uz : articles_ru;
 
-
   const categories = [
     { key: "all", label: t("all") },
     { key: "academics", label: t("academics") },
@@ -192,7 +187,6 @@ const News: React.FC = () => {
     { key: "values", label: t("values") }
   ];
 
-  
   // Map qilish:
   const mappedCategories = categories.map(category => ({
     value: category.key,
@@ -210,18 +204,19 @@ const News: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t('news')}
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('newsDesc')}
-            </p>
-          </div>
+      <section className="relative min-h-[40vh] from-emerald-50 to-blue-50 bg-gradient-to-tr overflow-hidden">
+        <div className="absolute inset-0 backdrop-blur-md bg-white/10" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            {t('news')}
+          </h1>
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            {t('newsDesc')}
+          </p>
         </div>
       </section>
+
 
       {/* Category Filter */}
       <section className="py-8 bg-white border-b">

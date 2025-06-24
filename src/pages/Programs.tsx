@@ -58,22 +58,23 @@ const Programs: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {t('programsTitle')}
-            </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {languageChooser(
-                'Comprehensive educational programs designed to nurture young minds through Islamic values and academic excellence.',
-                'Yosh avlod ongini islomiy qadriyatlar va ilmiy mukammallik orqali tarbiyalashga mo‘ljallangan keng qamrovli ta\'lim dasturlari.',
-                'Всеобъемлющие образовательные программы, направленные на воспитание юных умов через исламские ценности и академическое совершенство.'
-              )}
-            </p>
-          </div>
+      <section className="relative min-h-[40vh] from-emerald-50 to-blue-50 bg-gradient-to-tr overflow-hidden">        
+        <div className="absolute inset-0 backdrop-blur-md bg-white/10" />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            {t('programsTitle')}
+          </h1>
+          <p className="text-xl text-gray-800 max-w-3xl mx-auto">
+            {languageChooser(
+              'Comprehensive educational programs designed to nurture young minds through Islamic values and academic excellence.',
+              'Yosh avlod ongini islomiy qadriyatlar va ilmiy mukammallik orqali tarbiyalashga mo‘ljallangan keng qamrovli ta\'lim dasturlari.',
+              'Всеобъемлющие образовательные программы, направленные на воспитание юных умов через исламские ценности и академическое совершенство.'
+            )}
+          </p>
         </div>
       </section>
+
 
       {/* Programs Overview */}
       <section className="py-16">

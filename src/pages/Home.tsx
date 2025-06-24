@@ -11,17 +11,17 @@ const Home: React.FC = () => {
     {
       icon: <GraduationCap className="h-8 w-8 text-emerald-600" />,
       title: t('preK3rd'),
-      description: (currentLanguage === 'en'? 'Ages 3-9' : currentLanguage === 'uz'? '3-9 yosh' : 'Возраст 3-9 лет')
+      description: (currentLanguage === 'en' ? 'Ages 3-9' : currentLanguage === 'uz' ? '3-9 yosh' : 'Возраст 3-9 лет')
     },
     {
       icon: <MapPin className="h-8 w-8 text-emerald-600" />,
       title: t('ohioLocation'),
-      description: (currentLanguage === 'en'? '3 Convenient Locations' : currentLanguage === 'uz'? '3 ta qulay joylar' : '3 удобных места')
+      description: (currentLanguage === 'en' ? '3 Convenient Locations' : currentLanguage === 'uz' ? '3 ta qulay joylar' : '3 удобных места')
     },
     {
       icon: <Users className="h-8 w-8 text-emerald-600" />,
       title: t('smallClasses'),
-      description: (currentLanguage === 'en'? '12-15 Students Per Class' : currentLanguage === 'uz'? 'Har bir sinfda 12-15 nafar talaba' : '12-15 учеников в классе')
+      description: (currentLanguage === 'en' ? '12-15 Students Per Class' : currentLanguage === 'uz' ? 'Har bir sinfda 12-15 nafar talaba' : '12-15 учеников в классе')
     },
     {
       icon: <Clock className="h-8 w-8 text-emerald-600" />,
@@ -51,13 +51,19 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-emerald-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
+      <section className="relative min-h-[70vh] overflow-hidden">
+        <div
+          className="w-full h-[500px] bg-[linear-gradient(to_left,white_15%,rgba(255,255,255,0)_60%),url('/images/image.png')] bg-cover bg-center bg-no-repeat"
+        />
+
+        <div className="absolute inset-0 bg-white/10" />
+
+        <div className="absolute inset-0 z-10 max-w-7x px-4 sm:px-6 lg:px-8 flex items-center justify-end">
+          <div className="text-center justify-center max-w-2xl py-20">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               {t('welcome')}
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-800 mb-8">
               {t('welcomeSubtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -77,6 +83,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
 
       {/* Quick Facts */}
       <section className="py-16 bg-white">
